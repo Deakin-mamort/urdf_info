@@ -1,0 +1,8 @@
+prefix=/home/viki/dev/devel
+
+Name: urdf_info
+Description: Description of urdf_info
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/viki/dev/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/viki/dev/install
+
+Name: urdf_extractor
+Description: Description of urdf_extractor
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/viki/dev/install/lib 
+Requires: 

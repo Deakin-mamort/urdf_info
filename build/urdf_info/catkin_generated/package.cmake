@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "urdf_info")
+set(urdf_info_MAINTAINER "Michael Mortimer <mamort@deakin.edu.au>")
+set(urdf_info_DEPRECATED "")
+set(urdf_info_VERSION "0.0.1")
+set(urdf_info_BUILD_DEPENDS "kdl_parser" "geometry_msgs" "turtlesim" "roscpp" "urdf")
+set(urdf_info_RUN_DEPENDS "geometry_msgs" "turlesim" "roscpp" "urdf")
+set(urdf_info_BUILDTOOL_DEPENDS "catkin")

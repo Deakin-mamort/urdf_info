@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/full_info.dir/src/full_info.cpp.o"
-  "/home/viki/dev/devel/lib/urdf_info/full_info.pdb"
-  "/home/viki/dev/devel/lib/urdf_info/full_info"
+  "/home/prorip/dev/devel/lib/urdf_info/full_info.pdb"
+  "/home/prorip/dev/devel/lib/urdf_info/full_info"
 )
 
 # Per-language clean rules from dependency scanning.

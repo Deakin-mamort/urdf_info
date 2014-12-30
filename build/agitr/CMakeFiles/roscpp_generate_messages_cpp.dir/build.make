@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/dev/src
+CMAKE_SOURCE_DIR = /home/prorip/dev/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/dev/build
+CMAKE_BINARY_DIR = /home/prorip/dev/build
 
 # Utility rule file for roscpp_generate_messages_cpp.
 
@@ -56,10 +56,10 @@ agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/build: roscpp_generate_message
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 
 agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	cd /home/viki/dev/build/agitr && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/prorip/dev/build/agitr && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/depend:
-	cd /home/viki/dev/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/dev/src /home/viki/dev/src/agitr /home/viki/dev/build /home/viki/dev/build/agitr /home/viki/dev/build/agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prorip/dev/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prorip/dev/src /home/prorip/dev/src/agitr /home/prorip/dev/build /home/prorip/dev/build/agitr /home/prorip/dev/build/agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 

@@ -46,6 +46,9 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/prorip/dev/src
 
@@ -630,11 +633,13 @@ clean: agitr/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 # Convenience name for "all" pass in the directory.
 urdf_info/all: urdf_info/CMakeFiles/full_info.dir/all
 urdf_info/all: urdf_info/CMakeFiles/hello_world.dir/all
+urdf_info/all: urdf_info/CMakeFiles/import_tree.dir/all
 .PHONY : urdf_info/all
 
 # Convenience name for "clean" pass in the directory.
 urdf_info/clean: urdf_info/CMakeFiles/full_info.dir/clean
 urdf_info/clean: urdf_info/CMakeFiles/hello_world.dir/clean
+urdf_info/clean: urdf_info/CMakeFiles/import_tree.dir/clean
 .PHONY : urdf_info/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -709,6 +714,41 @@ urdf_info/CMakeFiles/hello_world.dir/clean:
 
 # clean rule for target.
 clean: urdf_info/CMakeFiles/hello_world.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target urdf_info/CMakeFiles/import_tree.dir
+
+# All Build rule for target.
+urdf_info/CMakeFiles/import_tree.dir/all:
+	$(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/depend
+	$(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles  6
+	@echo "Built target import_tree"
+.PHONY : urdf_info/CMakeFiles/import_tree.dir/all
+
+# Include target in all.
+all: urdf_info/CMakeFiles/import_tree.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+urdf_info/CMakeFiles/import_tree.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/import_tree.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+.PHONY : urdf_info/CMakeFiles/import_tree.dir/rule
+
+# Convenience name for target.
+import_tree: urdf_info/CMakeFiles/import_tree.dir/rule
+.PHONY : import_tree
+
+# clean rule for target.
+urdf_info/CMakeFiles/import_tree.dir/clean:
+	$(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/clean
+.PHONY : urdf_info/CMakeFiles/import_tree.dir/clean
+
+# clean rule for target.
+clean: urdf_info/CMakeFiles/import_tree.dir/clean
 .PHONY : clean
 
 #=============================================================================

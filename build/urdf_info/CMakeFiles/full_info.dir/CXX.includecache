@@ -13,6 +13,8 @@ urdf_parser/urdf_parser.h
 /home/prorip/dev/src/urdf_info/src/urdf_parser/urdf_parser.h
 kdl_parser/kdl_parser.hpp
 /home/prorip/dev/src/urdf_info/src/kdl_parser/kdl_parser.hpp
+string
+-
 iostream
 -
 fstream

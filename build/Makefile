@@ -38,6 +38,9 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/prorip/dev/src
 
@@ -49,8 +52,8 @@ CMAKE_BINARY_DIR = /home/prorip/dev/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -396,6 +399,19 @@ hello_world/fast:
 	$(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/build
 .PHONY : hello_world/fast
 
+#=============================================================================
+# Target rules for targets named import_tree
+
+# Build rule for target.
+import_tree: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 import_tree
+.PHONY : import_tree
+
+# fast build rule for target.
+import_tree/fast:
+	$(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/build
+.PHONY : import_tree/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -428,6 +444,7 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... full_info"
 	@echo "... hello_world"
+	@echo "... import_tree"
 .PHONY : help
 
 

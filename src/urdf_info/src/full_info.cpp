@@ -1,6 +1,7 @@
 #include "urdf_model/model.h"
 #include "urdf_parser/urdf_parser.h"
 #include "kdl_parser/kdl_parser.hpp"
+#include <string>
 #include <iostream>
 #include <fstream>
 #include <iomanip>
@@ -18,6 +19,7 @@
 using namespace urdf;
 using namespace std;
 using namespace boost;
+using namespace kdl_parser;
 
 string jtypeToString(int type)
 {
@@ -170,7 +172,7 @@ void printLinkBranch(shared_ptr<const Link> link, shared_ptr<ModelInterface> rob
 			//}
 		}
 }
-void chainBegin(shared_ptr<ModelInterface> robot)
+void URDFchains(shared_ptr<ModelInterface> robot)
 {
 	for (map<string,shared_ptr<Joint> >::iterator joint = robot->joints_.begin();joint != robot->joints_.end(); joint++)
 	{
@@ -207,13 +209,12 @@ void chainBegin(shared_ptr<ModelInterface> robot)
  					//****BUG**** = doesn't work with multiple active child joints on a single link
  					for (vector<shared_ptr<Joint> >::const_iterator child_joint = link->child_joints.begin(); child_joint != link->child_joints.end(); child_joint++)
  					{
-
  						//****BUG**** if joint active assign
  						if ((*child_joint)->type !=6)
  							next_joint = (*child_joint);
  					}
 
- 					//if not active child joints
+ 					//if no active child joints
  					if (joint == next_joint)
  					{
  						cout <<endl;
@@ -226,36 +227,6 @@ void chainBegin(shared_ptr<ModelInterface> robot)
 		}
 
 	}
-}
-void chainEnd(shared_ptr<const Link> link, shared_ptr<ModelInterface> robot)
-{
-
-	for (vector<shared_ptr<Joint> >::const_iterator joint = link->child_joints.begin(); joint != link->child_joints.end(); joint++)
-	{
-		string child_link_name = (*joint)->child_link_name;
-
-		shared_ptr<Link> child_link;
-		robot->getLink(child_link_name, child_link);
-
-		cout << (*joint)->name << child_link->name << endl;
-
-	}
-
-
-
-	//Determine ending Joints
-	/*
-	if(joint->second->type == 6 && parent_link && prev_joint )
-	{
-		//Determine if previous joint is fixed to determine start of chain
-		if(prev_joint->type == 1)
-		{
-			//Print 1st fixed joint, link and 1st movable joint (start of chain pattern)
-			cout << prev_joint->name << "\t" << parent_link->name << "\t" << joint->second->name << endl;
-		}
-
-	}
-	*/
 }
 
 int main(int argc, char** argv)
@@ -288,19 +259,18 @@ int main(int argc, char** argv)
 
 	//Obtain KDL tree, exit if invalid
 	KDL::Tree kdl_tree;
-/*
-	if (!kdl_parser::treeFromString(xml_string, kdl_tree)){
+	const string parse_string = xml_string;
+
+	if (!treeFromString(parse_string, kdl_tree)){
 		cerr << redtxt << ("Failed to construct kdl tree") << whitetxt << endl;
 		return -1;
     }
 
-	else
-	{
-		int joints = kdl_tree.getNrOfJoints();
-		cout << joints << endl;
-	}
-*/
-
+	//bool exit_value;
+	//map<string,KDL::TreeElement>::const_iterator root;
+	//map<string,KDL::TreeElement> leafs;
+	//exit_value = kdl_tree.getRootSegment(root);
+	//exit_value = kdl_tree.getLeafSegments(leafs);
 
 	//Obtain root link
 	shared_ptr<const Link> root_link = robot1->getRoot();
@@ -315,6 +285,5 @@ int main(int argc, char** argv)
 	//printLinkTree(root_link);
 	//cout << bluetxt << "<----------------- Robot Branches ----------------->" << whitetxt << endl;
 	//printLinkBranch(root_link, robot1);
-	chainBegin(robot1);
-	//chainEnd(parent_link, robot1);
+	URDFchains(robot1);
 }

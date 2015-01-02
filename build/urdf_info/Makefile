@@ -38,6 +38,9 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/prorip/dev/src
 
@@ -49,8 +52,8 @@ CMAKE_BINARY_DIR = /home/prorip/dev/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -177,6 +180,20 @@ hello_world/fast:
 	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/build
 .PHONY : hello_world/fast
 
+# Convenience name for target.
+urdf_info/CMakeFiles/import_tree.dir/rule:
+	cd /home/prorip/dev/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/import_tree.dir/rule
+.PHONY : urdf_info/CMakeFiles/import_tree.dir/rule
+
+# Convenience name for target.
+import_tree: urdf_info/CMakeFiles/import_tree.dir/rule
+.PHONY : import_tree
+
+# fast build rule for target.
+import_tree/fast:
+	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/build
+.PHONY : import_tree/fast
+
 src/full_info.o: src/full_info.cpp.o
 .PHONY : src/full_info.o
 
@@ -225,6 +242,30 @@ src/hello.cpp.s:
 	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/src/hello.cpp.s
 .PHONY : src/hello.cpp.s
 
+src/import_tree.o: src/import_tree.cpp.o
+.PHONY : src/import_tree.o
+
+# target to build an object file
+src/import_tree.cpp.o:
+	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.o
+.PHONY : src/import_tree.cpp.o
+
+src/import_tree.i: src/import_tree.cpp.i
+.PHONY : src/import_tree.i
+
+# target to preprocess a source file
+src/import_tree.cpp.i:
+	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.i
+.PHONY : src/import_tree.cpp.i
+
+src/import_tree.s: src/import_tree.cpp.s
+.PHONY : src/import_tree.s
+
+# target to generate assembly for a file
+src/import_tree.cpp.s:
+	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.s
+.PHONY : src/import_tree.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -234,6 +275,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... full_info"
 	@echo "... hello_world"
+	@echo "... import_tree"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
@@ -246,6 +288,9 @@ help:
 	@echo "... src/hello.o"
 	@echo "... src/hello.i"
 	@echo "... src/hello.s"
+	@echo "... src/import_tree.o"
+	@echo "... src/import_tree.i"
+	@echo "... src/import_tree.s"
 .PHONY : help
 
 

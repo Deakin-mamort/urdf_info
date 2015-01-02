@@ -6,6 +6,7 @@
 /home/prorip/dev/build/gtest/CMakeFiles/gtest_main.dir
 /home/prorip/dev/build/agitr/CMakeFiles/hello.dir
 /home/prorip/dev/build/urdf_info/CMakeFiles/hello_world.dir
+/home/prorip/dev/build/urdf_info/CMakeFiles/import_tree.dir
 /home/prorip/dev/build/agitr/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/prorip/dev/build/agitr/CMakeFiles/roscpp_generate_messages_lisp.dir
 /home/prorip/dev/build/agitr/CMakeFiles/roscpp_generate_messages_py.dir

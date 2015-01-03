@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Project@build</name>
+	<name>Project-Debug@build</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -130,6 +130,11 @@
 		</link>
 		<link>
 			<name>[Targets]/[exe] hello_world</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] import_tree</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>

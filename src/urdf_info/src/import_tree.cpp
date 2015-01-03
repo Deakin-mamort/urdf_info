@@ -5,7 +5,7 @@
 #include "kdl/frames_io.hpp"
 #include "kdl/jntarray.hpp"
 #include "kdl/tree.hpp"
-#include "kdl_parser/kdl_parser.hpp"
+#include "/opt/ros/indigo/include/kdl_parser/kdl_parser.hpp"
 
 //URDF (Unified Robot Description Format) Library
 #include "urdf_model/model.h"
@@ -168,6 +168,36 @@ vector< KDL::Frame > getActiveFrames(vector< KDL::Chain > active_chains)
 	return active_frames;
 }
 
+vector< pair< double, double > > getWorkspace(vector< KDL::Frame > active_frames)
+{
+	//Define min\max cartesian values
+	double min_x=0, min_y=0, min_z=0;
+	double max_x=0, max_y=0, max_z=0;
+
+	//Define robot workspace
+	vector< pair< double, double> > robot_workspace;
+
+	for(vector< KDL::Frame >::iterator active_frame = active_frames.begin(); active_frame != active_frames.end(); active_frame++)
+	{
+		//Find max cartesian values
+		if(active_frame->p[0] > max_x){max_x = active_frame->p[0];}
+		if(active_frame->p[1] > max_y){max_y = active_frame->p[1];}
+		if(active_frame->p[2] > max_z){max_z = active_frame->p[2];}
+
+		//Find min cartesian values
+		if(active_frame->p[0] < min_x){min_x = active_frame->p[0];}
+		if(active_frame->p[1] < min_y){min_y = active_frame->p[1];}
+		if(active_frame->p[2] < min_z){min_z = active_frame->p[2];}
+	}
+
+	robot_workspace.push_back(make_pair(min_x, max_x));
+	robot_workspace.push_back(make_pair(min_y, max_y));
+	robot_workspace.push_back(make_pair(min_z, max_z));
+
+	return robot_workspace;
+}
+
+
 //Prints active chain information to terminal
 void printChainInfo(vector< KDL::Frame> active_frames, vector< pair< string, string > > active_rootleaf_pairs, vector< KDL::Chain > active_chains)
 {
@@ -217,9 +247,12 @@ void printChainInfo(vector< KDL::Frame> active_frames, vector< pair< string, str
 	cout << "-----------------------------------------------------------------\n";
 }
 
+
+
 //Print associated robot information to terminal
-void printRobotInfo(shared_ptr< urdf::ModelInterface > robot, vector< KDL::Chain > active_chains)
+void printRobotInfo(shared_ptr< urdf::ModelInterface > robot, vector< KDL::Chain > active_chains, vector< pair< double, double> > robot_workspace)
 {
+
 	shared_ptr<const urdf::Link> root_link = robot->getRoot();
 
 	cout << bluetxt << "---------------------- Main Description -------------------------\n" << whitetxt;
@@ -228,6 +261,15 @@ void printRobotInfo(shared_ptr< urdf::ModelInterface > robot, vector< KDL::Chain
 	cout << cyantxt << "Total Joints: " << whitetxt << robot->joints_.size() << "\n";
 	cout << cyantxt << "Total Links: " << whitetxt << robot->links_.size() << "\n";
 	cout << cyantxt << "Total Active Link: " << whitetxt << active_chains.size() <<"\n";
+	cout << cyantxt << "Robot Active Workspace:" << "\n"
+					<< "Min:"
+					<< "[" << robot_workspace[0].first <<",\t"
+					<< robot_workspace[1].first <<",\t"
+					<< robot_workspace[2].first <<" ]\n"
+					<< "Max:"
+					<< "[" << robot_workspace[0].second <<",\t"
+					<< robot_workspace[1].second <<",\t"
+					<< robot_workspace[2].second <<" ]\n";
 }
 
 int main(int argc, char** argv)
@@ -257,7 +299,9 @@ int main(int argc, char** argv)
 	//Vector of active frames
 	vector< KDL::Frame > active_frames = getActiveFrames(active_chains);
 
-	printRobotInfo(robot1, active_chains);
+	vector< pair< double, double> > robot_workspace = getWorkspace(active_frames);
+
+	printRobotInfo(robot1, active_chains, robot_workspace);
 	printChainInfo(active_frames, active_rootleaf_pairs, active_chains);
 
 }

@@ -400,6 +400,34 @@
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
+					<target name="[exe] import_tree" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>import_tree</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="[exe] import_tree/fast" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>import_tree/fast</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="Build" path="[Targets]/[exe] import_tree" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments>-C "/home/prorip/dev/build" </buildArguments>
+						<buildTarget>import_tree</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="Clean" path="[Targets]/[exe] import_tree" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/cmake</buildCommand>
+						<buildArguments>-E chdir "/home/prorip/dev/build/urdf_info" "/usr/bin/cmake" -P "CMakeFiles/import_tree.dir/cmake_clean.cmake"</buildArguments>
+						<buildTarget/>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
 					<target name=": all" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
 						<buildArguments/>
@@ -456,6 +484,27 @@
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
+					<target name="[obj] src/import_tree.cpp.o" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>src/import_tree.cpp.o</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="[pre] src/import_tree.cpp.i" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>src/import_tree.cpp.i</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="[to asm] src/import_tree.cpp.s" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>src/import_tree.cpp.s</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
 				</buildTargets>
 			</storageModule>
 		</cconfiguration>
@@ -463,6 +512,8 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="Project.null.1" name="Project"/>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
 		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
@@ -486,7 +537,6 @@
 			</scannerInfoProvider>
 		</profile>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="org.eclipse.cdt.core.pathentry">
 		<pathentry kind="mac" name="ROS_BUILD_SHARED_LIBS" path="" value="1"/>
 		<pathentry kind="mac" name="ROS_PACKAGE_NAME" path="" value="&quot;agitr&quot;"/>

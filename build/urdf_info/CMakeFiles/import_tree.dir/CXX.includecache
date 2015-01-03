@@ -19,8 +19,8 @@ kdl/jntarray.hpp
 /home/prorip/dev/src/urdf_info/src/kdl/jntarray.hpp
 kdl/tree.hpp
 /home/prorip/dev/src/urdf_info/src/kdl/tree.hpp
-kdl_parser/kdl_parser.hpp
-/home/prorip/dev/src/urdf_info/src/kdl_parser/kdl_parser.hpp
+/opt/ros/indigo/include/kdl_parser/kdl_parser.hpp
+-
 urdf_model/model.h
 /home/prorip/dev/src/urdf_info/src/urdf_model/model.h
 urdf_parser/urdf_parser.h

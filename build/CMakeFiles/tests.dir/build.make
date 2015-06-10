@@ -34,14 +34,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prorip/dev/src
+CMAKE_SOURCE_DIR = /home/viki/urdf_info/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prorip/dev/build
+CMAKE_BINARY_DIR = /home/viki/urdf_info/build
 
 # Utility rule file for tests.
 
@@ -63,6 +60,6 @@ CMakeFiles/tests.dir/clean:
 .PHONY : CMakeFiles/tests.dir/clean
 
 CMakeFiles/tests.dir/depend:
-	cd /home/prorip/dev/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prorip/dev/src /home/prorip/dev/src /home/prorip/dev/build /home/prorip/dev/build /home/prorip/dev/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/viki/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/urdf_info/src /home/viki/urdf_info/src /home/viki/urdf_info/build /home/viki/urdf_info/build /home/viki/urdf_info/build/CMakeFiles/tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tests.dir/depend
 

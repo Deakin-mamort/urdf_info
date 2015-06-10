@@ -38,22 +38,19 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prorip/dev/src
+CMAKE_SOURCE_DIR = /home/viki/urdf_info/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prorip/dev/build
+CMAKE_BINARY_DIR = /home/viki/urdf_info/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
+	/usr/bin/cmake -i .
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -123,14 +120,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/prorip/dev/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles /home/prorip/dev/build/urdf_info/CMakeFiles/progress.marks
-	cd /home/prorip/dev/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	cd /home/viki/urdf_info/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles /home/viki/urdf_info/build/urdf_info/CMakeFiles/progress.marks
+	cd /home/viki/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/prorip/dev/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/clean
+	cd /home/viki/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/clean
 .PHONY : clean
 
 # The main clean target
@@ -139,22 +136,36 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/prorip/dev/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/preinstall
+	cd /home/viki/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/prorip/dev/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/preinstall
+	cd /home/viki/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/prorip/dev/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/viki/urdf_info/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
+urdf_info/CMakeFiles/categorize.dir/rule:
+	cd /home/viki/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/categorize.dir/rule
+.PHONY : urdf_info/CMakeFiles/categorize.dir/rule
+
+# Convenience name for target.
+categorize: urdf_info/CMakeFiles/categorize.dir/rule
+.PHONY : categorize
+
+# fast build rule for target.
+categorize/fast:
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/categorize.dir/build.make urdf_info/CMakeFiles/categorize.dir/build
+.PHONY : categorize/fast
+
+# Convenience name for target.
 urdf_info/CMakeFiles/full_info.dir/rule:
-	cd /home/prorip/dev/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/full_info.dir/rule
+	cd /home/viki/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/full_info.dir/rule
 .PHONY : urdf_info/CMakeFiles/full_info.dir/rule
 
 # Convenience name for target.
@@ -163,12 +174,12 @@ full_info: urdf_info/CMakeFiles/full_info.dir/rule
 
 # fast build rule for target.
 full_info/fast:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/build
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/build
 .PHONY : full_info/fast
 
 # Convenience name for target.
 urdf_info/CMakeFiles/hello_world.dir/rule:
-	cd /home/prorip/dev/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/hello_world.dir/rule
+	cd /home/viki/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/hello_world.dir/rule
 .PHONY : urdf_info/CMakeFiles/hello_world.dir/rule
 
 # Convenience name for target.
@@ -177,12 +188,12 @@ hello_world: urdf_info/CMakeFiles/hello_world.dir/rule
 
 # fast build rule for target.
 hello_world/fast:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/build
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/build
 .PHONY : hello_world/fast
 
 # Convenience name for target.
 urdf_info/CMakeFiles/import_tree.dir/rule:
-	cd /home/prorip/dev/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/import_tree.dir/rule
+	cd /home/viki/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/import_tree.dir/rule
 .PHONY : urdf_info/CMakeFiles/import_tree.dir/rule
 
 # Convenience name for target.
@@ -191,15 +202,39 @@ import_tree: urdf_info/CMakeFiles/import_tree.dir/rule
 
 # fast build rule for target.
 import_tree/fast:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/build
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/build
 .PHONY : import_tree/fast
+
+src/categorize.o: src/categorize.cpp.o
+.PHONY : src/categorize.o
+
+# target to build an object file
+src/categorize.cpp.o:
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/categorize.dir/build.make urdf_info/CMakeFiles/categorize.dir/src/categorize.cpp.o
+.PHONY : src/categorize.cpp.o
+
+src/categorize.i: src/categorize.cpp.i
+.PHONY : src/categorize.i
+
+# target to preprocess a source file
+src/categorize.cpp.i:
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/categorize.dir/build.make urdf_info/CMakeFiles/categorize.dir/src/categorize.cpp.i
+.PHONY : src/categorize.cpp.i
+
+src/categorize.s: src/categorize.cpp.s
+.PHONY : src/categorize.s
+
+# target to generate assembly for a file
+src/categorize.cpp.s:
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/categorize.dir/build.make urdf_info/CMakeFiles/categorize.dir/src/categorize.cpp.s
+.PHONY : src/categorize.cpp.s
 
 src/full_info.o: src/full_info.cpp.o
 .PHONY : src/full_info.o
 
 # target to build an object file
 src/full_info.cpp.o:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/src/full_info.cpp.o
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/src/full_info.cpp.o
 .PHONY : src/full_info.cpp.o
 
 src/full_info.i: src/full_info.cpp.i
@@ -207,7 +242,7 @@ src/full_info.i: src/full_info.cpp.i
 
 # target to preprocess a source file
 src/full_info.cpp.i:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/src/full_info.cpp.i
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/src/full_info.cpp.i
 .PHONY : src/full_info.cpp.i
 
 src/full_info.s: src/full_info.cpp.s
@@ -215,7 +250,7 @@ src/full_info.s: src/full_info.cpp.s
 
 # target to generate assembly for a file
 src/full_info.cpp.s:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/src/full_info.cpp.s
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/src/full_info.cpp.s
 .PHONY : src/full_info.cpp.s
 
 src/hello.o: src/hello.cpp.o
@@ -223,7 +258,7 @@ src/hello.o: src/hello.cpp.o
 
 # target to build an object file
 src/hello.cpp.o:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/src/hello.cpp.o
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/src/hello.cpp.o
 .PHONY : src/hello.cpp.o
 
 src/hello.i: src/hello.cpp.i
@@ -231,7 +266,7 @@ src/hello.i: src/hello.cpp.i
 
 # target to preprocess a source file
 src/hello.cpp.i:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/src/hello.cpp.i
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/src/hello.cpp.i
 .PHONY : src/hello.cpp.i
 
 src/hello.s: src/hello.cpp.s
@@ -239,7 +274,7 @@ src/hello.s: src/hello.cpp.s
 
 # target to generate assembly for a file
 src/hello.cpp.s:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/src/hello.cpp.s
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/src/hello.cpp.s
 .PHONY : src/hello.cpp.s
 
 src/import_tree.o: src/import_tree.cpp.o
@@ -247,7 +282,7 @@ src/import_tree.o: src/import_tree.cpp.o
 
 # target to build an object file
 src/import_tree.cpp.o:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.o
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.o
 .PHONY : src/import_tree.cpp.o
 
 src/import_tree.i: src/import_tree.cpp.i
@@ -255,7 +290,7 @@ src/import_tree.i: src/import_tree.cpp.i
 
 # target to preprocess a source file
 src/import_tree.cpp.i:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.i
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.i
 .PHONY : src/import_tree.cpp.i
 
 src/import_tree.s: src/import_tree.cpp.s
@@ -263,7 +298,7 @@ src/import_tree.s: src/import_tree.cpp.s
 
 # target to generate assembly for a file
 src/import_tree.cpp.s:
-	cd /home/prorip/dev/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.s
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.s
 .PHONY : src/import_tree.cpp.s
 
 # Help Target
@@ -272,6 +307,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... categorize"
 	@echo "... edit_cache"
 	@echo "... full_info"
 	@echo "... hello_world"
@@ -282,6 +318,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... src/categorize.o"
+	@echo "... src/categorize.i"
+	@echo "... src/categorize.s"
 	@echo "... src/full_info.o"
 	@echo "... src/full_info.i"
 	@echo "... src/full_info.s"
@@ -302,6 +341,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/prorip/dev/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/viki/urdf_info/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

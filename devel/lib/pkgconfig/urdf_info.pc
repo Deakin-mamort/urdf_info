@@ -1,8 +1,8 @@
-prefix=/home/prorip/dev/devel
+prefix=/home/viki/urdf_info/devel
 
 Name: urdf_info
 Description: Description of urdf_info
 Version: 0.0.1
 Cflags: 
-Libs: -L/home/prorip/dev/devel/lib 
+Libs: -L/home/viki/urdf_info/devel/lib 
 Requires: 

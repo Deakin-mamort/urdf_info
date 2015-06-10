@@ -277,13 +277,13 @@ int main(int argc, char** argv)
 	if (!root_link) return -1;
 	
 	//Print robot information
-	//printRobotInfo(robot1);
-	//cout << magentatxt << "Total Segments: " << whitetxt << kdl_tree.getNrOfSegments() << endl;
-	//printJointList(robot1);
-	//printLinkList(robot1);
-	//cout << bluetxt << "<------------------- Robot Tree ------------------->" << whitetxt << endl;
-	//printLinkTree(root_link);
-	//cout << bluetxt << "<----------------- Robot Branches ----------------->" << whitetxt << endl;
-	//printLinkBranch(root_link, robot1);
+	printRobotInfo(robot1);
+	cout << magentatxt << "Total Segments: " << whitetxt << kdl_tree.getNrOfSegments() << endl;
+	printJointList(robot1);
+	printLinkList(robot1);
+	cout << bluetxt << "<------------------- Robot Tree ------------------->" << whitetxt << endl;
+	printLinkTree(root_link);
+	cout << bluetxt << "<----------------- Robot Branches ----------------->" << whitetxt << endl;
+	printLinkBranch(root_link, robot1);
 	URDFchains(robot1);
 }

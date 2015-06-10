@@ -169,23 +169,29 @@ void checkMirrors(vector<KDL::Frame> effectors)
 		//to check for mirrors we must iterate through all end effector locations and compare each of the co-ordinates
 		//if a mirror is found the end effector name/number and axis needs to be recorded
 	
-		int count=1;
+
+		int count1=0;
 	
 		for (vector<KDL::Frame>::iterator it1 = effectors.begin(); it1 != effectors.end(); it1++){
 			KDL::Frame temp1 = *it1;
+
+			double margin = 0.00001;
 			
-			for (int i=count; i!=effectors.size(); i++){
-				KDL::Frame temp2 = effectors[count];
+			for (int i=(count1+1); i!=effectors.size(); i++){
+				KDL::Frame temp2 = effectors[(count1+1)];
 								
 				for (int j=0; j!=3; j++){
-					cout << temp1.p[j] << "\t" << temp2.p[j] << "\n";
-					if( temp1.p[i] == temp2.p[i] ) {
-						//	cout<< temp1.p[i] << "\t" << temp2.p[i] << "\n";
+					double error = abs(temp1.p[j] + temp2.p[j]);
+					if( error < margin) {
+						    cout << temp1.p[j] << "\t" << temp2.p[j] << "\t" << "Mirror \n";
 					}
 					
 				}
+
 			}
-			count++;
+
+			count1++;
+
 		}
 }
 
@@ -240,8 +246,5 @@ int main(int argc, char** argv)
 	KDL::Frame min = workspaceMin(endEffectors);
 	checkMirrors(endEffectors);
 	printEffectors(endEffectors);
-	
-	//cout << "Max Workspace - " << max.p << "\n";
-	//cout << "Min Workspace - " << min.p << "\n";
 	
 }

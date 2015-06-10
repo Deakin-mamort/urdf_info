@@ -1,2 +1,2 @@
 agitr:urdf_info
--GEclipse CDT4 - Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/viki/urdf_info/devel -DCMAKE_INSTALL_PREFIX=/home/viki/urdf_info/install -G Unix Makefiles

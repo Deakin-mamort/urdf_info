@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/prorip/dev/src/agitr/src/hello.cpp
+/home/viki/urdf_info/src/agitr/src/hello.cpp
 ros/ros.h
 -
 
@@ -225,6 +225,8 @@ boost/make_shared.hpp
 -
 
 /opt/ros/indigo/include/ros/message_forward.h
+cstddef
+-
 memory
 -
 

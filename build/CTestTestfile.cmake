@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/prorip/dev/src
-# Build directory: /home/prorip/dev/build
+# Source directory: /home/viki/urdf_info/src
+# Build directory: /home/viki/urdf_info/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

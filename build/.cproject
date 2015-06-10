@@ -22,6 +22,13 @@
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
+					<target name=": download_extra_data" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>download_extra_data</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
 					<target name=": doxygen" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
 						<buildArguments/>
@@ -115,14 +122,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] gtest" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/prorip/dev/build" </buildArguments>
+						<buildArguments>-C "/home/viki/urdf_info/build" </buildArguments>
 						<buildTarget>gtest</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] gtest" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/prorip/dev/build/gtest" "/usr/bin/cmake" -P "CMakeFiles/gtest.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/viki/urdf_info/build/gtest" "/usr/bin/cmake" -P "CMakeFiles/gtest.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget/>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -143,14 +150,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[lib] gtest_main" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/prorip/dev/build" </buildArguments>
+						<buildArguments>-C "/home/viki/urdf_info/build" </buildArguments>
 						<buildTarget>gtest_main</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[lib] gtest_main" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/prorip/dev/build/gtest" "/usr/bin/cmake" -P "CMakeFiles/gtest_main.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/viki/urdf_info/build/gtest" "/usr/bin/cmake" -P "CMakeFiles/gtest_main.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget/>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -234,14 +241,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[exe] hello" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/prorip/dev/build" </buildArguments>
+						<buildArguments>-C "/home/viki/urdf_info/build" </buildArguments>
 						<buildTarget>hello</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[exe] hello" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/prorip/dev/build/agitr" "/usr/bin/cmake" -P "CMakeFiles/hello.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/viki/urdf_info/build/agitr" "/usr/bin/cmake" -P "CMakeFiles/hello.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget/>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -344,6 +351,34 @@
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
+					<target name="[exe] categorize" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>categorize</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="[exe] categorize/fast" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>categorize/fast</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="Build" path="[Targets]/[exe] categorize" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments>-C "/home/viki/urdf_info/build" </buildArguments>
+						<buildTarget>categorize</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="Clean" path="[Targets]/[exe] categorize" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/cmake</buildCommand>
+						<buildArguments>-E chdir "/home/viki/urdf_info/build/urdf_info" "/usr/bin/cmake" -P "CMakeFiles/categorize.dir/cmake_clean.cmake"</buildArguments>
+						<buildTarget/>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
 					<target name="[exe] full_info" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
 						<buildArguments/>
@@ -360,14 +395,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[exe] full_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/prorip/dev/build" </buildArguments>
+						<buildArguments>-C "/home/viki/urdf_info/build" </buildArguments>
 						<buildTarget>full_info</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[exe] full_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/prorip/dev/build/urdf_info" "/usr/bin/cmake" -P "CMakeFiles/full_info.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/viki/urdf_info/build/urdf_info" "/usr/bin/cmake" -P "CMakeFiles/full_info.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget/>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -388,14 +423,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[exe] hello_world" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/prorip/dev/build" </buildArguments>
+						<buildArguments>-C "/home/viki/urdf_info/build" </buildArguments>
 						<buildTarget>hello_world</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[exe] hello_world" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/prorip/dev/build/urdf_info" "/usr/bin/cmake" -P "CMakeFiles/hello_world.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/viki/urdf_info/build/urdf_info" "/usr/bin/cmake" -P "CMakeFiles/hello_world.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget/>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -416,14 +451,14 @@
 					</target>
 					<target name="Build" path="[Targets]/[exe] import_tree" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/make</buildCommand>
-						<buildArguments>-C "/home/prorip/dev/build" </buildArguments>
+						<buildArguments>-C "/home/viki/urdf_info/build" </buildArguments>
 						<buildTarget>import_tree</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
 					<target name="Clean" path="[Targets]/[exe] import_tree" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 						<buildCommand>/usr/bin/cmake</buildCommand>
-						<buildArguments>-E chdir "/home/prorip/dev/build/urdf_info" "/usr/bin/cmake" -P "CMakeFiles/import_tree.dir/cmake_clean.cmake"</buildArguments>
+						<buildArguments>-E chdir "/home/viki/urdf_info/build/urdf_info" "/usr/bin/cmake" -P "CMakeFiles/import_tree.dir/cmake_clean.cmake"</buildArguments>
 						<buildTarget/>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
@@ -439,6 +474,27 @@
 						<buildCommand>/usr/bin/make</buildCommand>
 						<buildArguments/>
 						<buildTarget>clean</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="[obj] src/categorize.cpp.o" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>src/categorize.cpp.o</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="[pre] src/categorize.cpp.i" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>src/categorize.cpp.i</buildTarget>
+						<stopOnError>true</stopOnError>
+						<useDefaultCommand>false</useDefaultCommand>
+					</target>
+					<target name="[to asm] src/categorize.cpp.s" path="urdf_info" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+						<buildCommand>/usr/bin/make</buildCommand>
+						<buildArguments/>
+						<buildTarget>src/categorize.cpp.s</buildTarget>
 						<stopOnError>true</stopOnError>
 						<useDefaultCommand>false</useDefaultCommand>
 					</target>
@@ -512,8 +568,6 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="Project.null.1" name="Project"/>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
-	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
 		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
@@ -538,16 +592,17 @@
 		</profile>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.pathentry">
+		<pathentry kind="src" path="[Source directory]"/>
+		<pathentry excluding="[Source directory]/|**/CMakeFiles/" kind="out" path=""/>
 		<pathentry kind="mac" name="ROS_BUILD_SHARED_LIBS" path="" value="1"/>
 		<pathentry kind="mac" name="ROS_PACKAGE_NAME" path="" value="&quot;agitr&quot;"/>
 		<pathentry kind="mac" name="ROSCONSOLE_BACKEND_LOG4CXX" path="" value=""/>
 		<pathentry include="/usr/src/gtest/include" kind="inc" path="" system="true"/>
 		<pathentry include="/usr/src/gtest" kind="inc" path="" system="true"/>
-		<pathentry include="/home/prorip/dev/src/agitr/include" kind="inc" path="" system="true"/>
+		<pathentry include="/home/viki/urdf_info/src/agitr/include" kind="inc" path="" system="true"/>
 		<pathentry include="/opt/ros/indigo/include" kind="inc" path="" system="true"/>
-		<pathentry include="/home/prorip/dev/src/urdf_info/include" kind="inc" path="" system="true"/>
+		<pathentry include="/home/viki/urdf_info/src/urdf_info/include" kind="inc" path="" system="true"/>
 		<pathentry include="/usr/include/eigen3" kind="inc" path="" system="true"/>
-		<pathentry kind="src" path="[Source directory]"/>
-		<pathentry excluding="[Source directory]/|**/CMakeFiles/" kind="out" path=""/>
 	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 </cproject>

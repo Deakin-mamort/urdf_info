@@ -46,14 +46,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/prorip/dev/src
+CMAKE_SOURCE_DIR = /home/viki/urdf_info/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/prorip/dev/build
+CMAKE_BINARY_DIR = /home/viki/urdf_info/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/clean_test_results.dir
@@ -62,15 +59,15 @@ CMAKE_BINARY_DIR = /home/prorip/dev/build
 CMakeFiles/clean_test_results.dir/all:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/depend
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target clean_test_results"
 .PHONY : CMakeFiles/clean_test_results.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/clean_test_results.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/clean_test_results.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : CMakeFiles/clean_test_results.dir/rule
 
 # Convenience name for target.
@@ -87,21 +84,52 @@ clean: CMakeFiles/clean_test_results.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/download_extra_data.dir
+
+# All Build rule for target.
+CMakeFiles/download_extra_data.dir/all:
+	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/depend
+	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
+	@echo "Built target download_extra_data"
+.PHONY : CMakeFiles/download_extra_data.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/download_extra_data.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/download_extra_data.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
+.PHONY : CMakeFiles/download_extra_data.dir/rule
+
+# Convenience name for target.
+download_extra_data: CMakeFiles/download_extra_data.dir/rule
+.PHONY : download_extra_data
+
+# clean rule for target.
+CMakeFiles/download_extra_data.dir/clean:
+	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/clean
+.PHONY : CMakeFiles/download_extra_data.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/download_extra_data.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
 
 # All Build rule for target.
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : CMakeFiles/doxygen.dir/rule
 
 # Convenience name for target.
@@ -124,15 +152,15 @@ clean: CMakeFiles/doxygen.dir/clean
 CMakeFiles/run_tests.dir/all:
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/depend
 	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target run_tests"
 .PHONY : CMakeFiles/run_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
 
 # Convenience name for target.
@@ -155,15 +183,15 @@ clean: CMakeFiles/run_tests.dir/clean
 CMakeFiles/tests.dir/all:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
 
 # Convenience name for target.
@@ -202,15 +230,15 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles  3
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -233,15 +261,15 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles  4
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -289,15 +317,15 @@ agitr/preinstall:
 agitr/CMakeFiles/_catkin_empty_exported_target.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/_catkin_empty_exported_target.dir/build.make agitr/CMakeFiles/_catkin_empty_exported_target.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/_catkin_empty_exported_target.dir/build.make agitr/CMakeFiles/_catkin_empty_exported_target.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target _catkin_empty_exported_target"
 .PHONY : agitr/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
@@ -320,7 +348,7 @@ clean: agitr/CMakeFiles/_catkin_empty_exported_target.dir/clean
 agitr/CMakeFiles/hello.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/hello.dir/build.make agitr/CMakeFiles/hello.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/hello.dir/build.make agitr/CMakeFiles/hello.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles  5
 	@echo "Built target hello"
 .PHONY : agitr/CMakeFiles/hello.dir/all
 
@@ -330,9 +358,9 @@ all: agitr/CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/hello.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/hello.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/hello.dir/rule
 
 # Convenience name for target.
@@ -355,15 +383,15 @@ clean: agitr/CMakeFiles/hello.dir/clean
 agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_cpp"
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -386,15 +414,15 @@ clean: agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_lisp"
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -417,15 +445,15 @@ clean: agitr/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 agitr/CMakeFiles/roscpp_generate_messages_py.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/roscpp_generate_messages_py.dir/build.make agitr/CMakeFiles/roscpp_generate_messages_py.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/roscpp_generate_messages_py.dir/build.make agitr/CMakeFiles/roscpp_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target roscpp_generate_messages_py"
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/roscpp_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -448,15 +476,15 @@ clean: agitr/CMakeFiles/roscpp_generate_messages_py.dir/clean
 agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_cpp"
 .PHONY : agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -479,15 +507,15 @@ clean: agitr/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_lisp"
 .PHONY : agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -510,15 +538,15 @@ clean: agitr/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target rosgraph_msgs_generate_messages_py"
 .PHONY : agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -541,15 +569,15 @@ clean: agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_cpp"
 .PHONY : agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -572,15 +600,15 @@ clean: agitr/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_lisp"
 .PHONY : agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -603,15 +631,15 @@ clean: agitr/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 agitr/CMakeFiles/std_msgs_generate_messages_py.dir/all:
 	$(MAKE) -f agitr/CMakeFiles/std_msgs_generate_messages_py.dir/build.make agitr/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 	$(MAKE) -f agitr/CMakeFiles/std_msgs_generate_messages_py.dir/build.make agitr/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
 	@echo "Built target std_msgs_generate_messages_py"
 .PHONY : agitr/CMakeFiles/std_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 agitr/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 agitr/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : agitr/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -631,12 +659,14 @@ clean: agitr/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 # Directory level rules for directory urdf_info
 
 # Convenience name for "all" pass in the directory.
+urdf_info/all: urdf_info/CMakeFiles/categorize.dir/all
 urdf_info/all: urdf_info/CMakeFiles/full_info.dir/all
 urdf_info/all: urdf_info/CMakeFiles/hello_world.dir/all
 urdf_info/all: urdf_info/CMakeFiles/import_tree.dir/all
 .PHONY : urdf_info/all
 
 # Convenience name for "clean" pass in the directory.
+urdf_info/clean: urdf_info/CMakeFiles/categorize.dir/clean
 urdf_info/clean: urdf_info/CMakeFiles/full_info.dir/clean
 urdf_info/clean: urdf_info/CMakeFiles/hello_world.dir/clean
 urdf_info/clean: urdf_info/CMakeFiles/import_tree.dir/clean
@@ -647,13 +677,48 @@ urdf_info/preinstall:
 .PHONY : urdf_info/preinstall
 
 #=============================================================================
+# Target rules for target urdf_info/CMakeFiles/categorize.dir
+
+# All Build rule for target.
+urdf_info/CMakeFiles/categorize.dir/all:
+	$(MAKE) -f urdf_info/CMakeFiles/categorize.dir/build.make urdf_info/CMakeFiles/categorize.dir/depend
+	$(MAKE) -f urdf_info/CMakeFiles/categorize.dir/build.make urdf_info/CMakeFiles/categorize.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles  1
+	@echo "Built target categorize"
+.PHONY : urdf_info/CMakeFiles/categorize.dir/all
+
+# Include target in all.
+all: urdf_info/CMakeFiles/categorize.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+urdf_info/CMakeFiles/categorize.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/categorize.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
+.PHONY : urdf_info/CMakeFiles/categorize.dir/rule
+
+# Convenience name for target.
+categorize: urdf_info/CMakeFiles/categorize.dir/rule
+.PHONY : categorize
+
+# clean rule for target.
+urdf_info/CMakeFiles/categorize.dir/clean:
+	$(MAKE) -f urdf_info/CMakeFiles/categorize.dir/build.make urdf_info/CMakeFiles/categorize.dir/clean
+.PHONY : urdf_info/CMakeFiles/categorize.dir/clean
+
+# clean rule for target.
+clean: urdf_info/CMakeFiles/categorize.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target urdf_info/CMakeFiles/full_info.dir
 
 # All Build rule for target.
 urdf_info/CMakeFiles/full_info.dir/all:
 	$(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/depend
 	$(MAKE) -f urdf_info/CMakeFiles/full_info.dir/build.make urdf_info/CMakeFiles/full_info.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles  2
 	@echo "Built target full_info"
 .PHONY : urdf_info/CMakeFiles/full_info.dir/all
 
@@ -663,9 +728,9 @@ all: urdf_info/CMakeFiles/full_info.dir/all
 
 # Build rule for subdir invocation for target.
 urdf_info/CMakeFiles/full_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/full_info.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : urdf_info/CMakeFiles/full_info.dir/rule
 
 # Convenience name for target.
@@ -688,7 +753,7 @@ clean: urdf_info/CMakeFiles/full_info.dir/clean
 urdf_info/CMakeFiles/hello_world.dir/all:
 	$(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/depend
 	$(MAKE) -f urdf_info/CMakeFiles/hello_world.dir/build.make urdf_info/CMakeFiles/hello_world.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles  6
 	@echo "Built target hello_world"
 .PHONY : urdf_info/CMakeFiles/hello_world.dir/all
 
@@ -698,9 +763,9 @@ all: urdf_info/CMakeFiles/hello_world.dir/all
 
 # Build rule for subdir invocation for target.
 urdf_info/CMakeFiles/hello_world.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/hello_world.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : urdf_info/CMakeFiles/hello_world.dir/rule
 
 # Convenience name for target.
@@ -723,7 +788,7 @@ clean: urdf_info/CMakeFiles/hello_world.dir/clean
 urdf_info/CMakeFiles/import_tree.dir/all:
 	$(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/depend
 	$(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/prorip/dev/build/CMakeFiles  6
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles  7
 	@echo "Built target import_tree"
 .PHONY : urdf_info/CMakeFiles/import_tree.dir/all
 
@@ -733,9 +798,9 @@ all: urdf_info/CMakeFiles/import_tree.dir/all
 
 # Build rule for subdir invocation for target.
 urdf_info/CMakeFiles/import_tree.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/import_tree.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/prorip/dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
 .PHONY : urdf_info/CMakeFiles/import_tree.dir/rule
 
 # Convenience name for target.

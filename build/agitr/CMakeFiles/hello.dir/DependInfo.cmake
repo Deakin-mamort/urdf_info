@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/prorip/dev/src/agitr/src/hello.cpp" "/home/prorip/dev/build/agitr/CMakeFiles/hello.dir/src/hello.cpp.o"
+  "/home/viki/urdf_info/src/agitr/src/hello.cpp" "/home/viki/urdf_info/build/agitr/CMakeFiles/hello.dir/src/hello.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,7 +21,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/prorip/dev/src/agitr/include"
+  "/home/viki/urdf_info/src/agitr/include"
   "/opt/ros/indigo/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

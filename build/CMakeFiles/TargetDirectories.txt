@@ -1,7 +1,6 @@
 /home/viki/urdf_info/build/agitr/CMakeFiles/_catkin_empty_exported_target.dir
 /home/viki/urdf_info/build/urdf_info/CMakeFiles/categorize.dir
 /home/viki/urdf_info/build/CMakeFiles/clean_test_results.dir
-/home/viki/urdf_info/build/CMakeFiles/download_extra_data.dir
 /home/viki/urdf_info/build/CMakeFiles/doxygen.dir
 /home/viki/urdf_info/build/urdf_info/CMakeFiles/full_info.dir
 /home/viki/urdf_info/build/gtest/CMakeFiles/gtest.dir
@@ -9,6 +8,7 @@
 /home/viki/urdf_info/build/agitr/CMakeFiles/hello.dir
 /home/viki/urdf_info/build/urdf_info/CMakeFiles/hello_world.dir
 /home/viki/urdf_info/build/urdf_info/CMakeFiles/import_tree.dir
+/home/viki/urdf_info/build/urdf_info/CMakeFiles/pointcloud.dir
 /home/viki/urdf_info/build/agitr/CMakeFiles/roscpp_generate_messages_cpp.dir
 /home/viki/urdf_info/build/agitr/CMakeFiles/roscpp_generate_messages_lisp.dir
 /home/viki/urdf_info/build/agitr/CMakeFiles/roscpp_generate_messages_py.dir

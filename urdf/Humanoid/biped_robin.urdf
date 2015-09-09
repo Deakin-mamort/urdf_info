@@ -1,0 +1,503 @@
+<?xml version="1.0"?>
+<robot name="horst">
+	<link name="base_link">
+		<visual>		  
+		  <geometry>
+		    <box size="0.09 0.18 0.6" />
+		  </geometry>
+			<origin xyz="0 0 0.255" rpy="0 0 0" />
+		  <material name="blue">
+		    <color rgba="0 0 0.8 1" />
+		  </material>
+		</visual>		
+	</link>
+
+	<link name="left_arm">
+		<visual>		  
+		  <geometry>
+		    <box size="0.075 0.075 0.075" />
+		  </geometry>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+		  <material name="blue">
+		    <color rgba="0 0 0.8 1" />
+		  </material>
+		</visual>
+	</link>
+	
+	<joint name="left_arm" type="revolute">
+		<parent link="base_link"/>
+		<child link="left_arm"/>
+		<origin xyz="0.012 0.220 0.46"/>
+		<axis xyz="0 1 0"/>	
+		<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+	</joint>
+
+			<link name="left_arm2">
+				<visual>		  
+					<geometry>
+				  	<cylinder length="0.2175" radius="0.025" />
+					</geometry>
+					<origin xyz="0 0 -0.10875" rpy="0 0 0" />
+					<material name="gold">
+				  	<color rgba="0.8549 0.647 0.125 1" />
+					</material>
+				</visual>
+			</link>
+			
+			<joint name="left_arm2" type="fixed">
+     		<parent link="left_arm"/>
+    		<child link="left_arm2"/>
+    		<origin xyz="0 0 -0.0375"/>
+   		</joint>
+
+				<link name="left_arm3">
+					<visual>		  
+						<geometry>
+							<cylinder length="0.2175" radius="0.025" />
+						</geometry>
+						<origin xyz="0 0 -0.10875" rpy="0 0 0" />
+						<material name="gold">
+				  	<color rgba="0.8549 0.647 0.125 1" />
+						</material>
+					</visual>
+				</link>
+			
+				<joint name="left_arm3" type="fixed">
+		   		<parent link="left_arm2"/>
+		  		<child link="left_arm3"/>
+		  		<origin xyz="0 0 -0.2175" rpy="0 -0.5235 0"/>
+		 		</joint>
+			
+
+	<link name="right_arm">
+		<visual>		  
+		  <geometry>
+		    <box size="0.075 0.075 0.075" />
+		  </geometry>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+		  <material name="blue">
+		    <color rgba="0 0 0.8 1" />
+		  </material>
+		</visual>
+	</link>
+
+	<joint name="right_arm" type="revolute">
+		<parent link="base_link"/>
+		<child link="right_arm"/>
+		<origin xyz="0.012 -0.220 0.46"/>
+		<axis xyz="0 1 0"/>	
+		<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+	</joint>	
+
+		<link name="right_arm2">
+				<visual>		  
+					<geometry>
+				  	<cylinder length="0.2175" radius="0.025" />
+					</geometry>
+					<origin xyz="0 0 -0.10875" rpy="0 0 0" />
+					<material name="gold">
+				  	<color rgba="0.8549 0.647 0.125 1" />
+					</material>
+				</visual>
+			</link>
+			
+			<joint name="right_arm2" type="fixed">
+     		<parent link="right_arm"/>
+    		<child link="right_arm2"/>
+    		<origin xyz="0 0 -0.0375"/>
+   		</joint>
+
+				<link name="right_arm3">
+					<visual>		  
+						<geometry>
+							<cylinder length="0.2175" radius="0.025" />
+						</geometry>
+						<origin xyz="0 0 -0.10875" rpy="0 0 0" />
+						<material name="gold">
+				  	<color rgba="0.8549 0.647 0.125 1" />
+						</material>
+					</visual>
+				</link>
+			
+				<joint name="right_arm3" type="fixed">
+		   		<parent link="right_arm2"/>
+		  		<child link="right_arm3"/>
+		  		<origin xyz="0 0 -0.2175" rpy="0 -0.5235 0"/>
+		 		</joint>
+				
+						<link name="right_tcp">
+							<visual>		  
+								<geometry>
+									<sphere radius="0.030" />
+								</geometry>
+								<origin xyz="0 0 0" rpy="0 0 0" />
+								<material name="gold">
+				  				<color rgba="0.8549 0.647 0.125 1" />
+								</material>
+							</visual>
+						</link>
+
+					<joint name="right_tcp" type="fixed">
+		   			<parent link="right_arm"/>
+		  			<child link="right_tcp"/>
+		  			<origin xyz="0.233 0.03 -0.595" rpy="0 0 0"/>
+		 			</joint>
+					
+
+
+
+  <link name="left_hip">
+		<visual>		  
+		  <geometry>
+		    <box size="0.09 0.09 0.225" />
+		  </geometry>
+			<origin xyz="0 0 -0.0675" rpy="0 0 0" />
+		  <material name="blue">
+		    <color rgba="0 0 0.8 1" />
+		  </material>
+		</visual>
+	</link>
+
+	<joint name="body_to_left_hip" type="revolute">
+		<parent link="base_link"/>
+		<child link="left_hip"/>
+		<origin xyz="0 0.125 0"/>
+		<axis xyz="0 1 0"/>	
+		<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+	</joint>
+
+			<link name="left_hip2">
+				<visual>		  
+					<geometry>
+						<box size="0.09 0.09 0.185" />
+					</geometry>
+					<origin xyz="0 0 -0.0475" rpy="0 0 0" />
+					<material name="gray">
+						<color rgba="0.2 0.2 0.2 1" />
+					</material>
+				</visual>		
+			</link>
+
+			<joint name="left_hip2" type="revolute">
+				<parent link="left_hip"/>
+				<child link="left_hip2"/>
+				<origin xyz="-0.09 0 -0.135"/>
+				<axis xyz="1 0 0"/>	
+				<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+			</joint>
+
+															<link name="left_hip21">
+																<visual>		  
+																	<geometry>
+																		<box size="0.08 0.07 0.07" />
+																	</geometry>
+																	<origin xyz="0 0 0" rpy="0 0 0" />
+																	<material name="blue">
+																		<color rgba="0 0 0.8 1" />
+																	</material>
+																</visual>		
+															</link>
+
+															<joint name="left_hip21" type="fixed">
+																<parent link="left_hip2"/>
+																<child link="left_hip21"/>
+																<origin xyz="0.075 0 -0.105"/>							
+															</joint>
+
+				<link name="left_hip3">
+					<visual>		  
+						<geometry>
+							<box size="0.07 0.07 0.175" />
+						</geometry>
+						<origin xyz="0 0 0" rpy="0 0 0" />
+						<material name="gray">
+							<color rgba="0.2 0.2 0.2 1" />
+						</material>
+					</visual>		
+				</link>
+
+				<joint name="left_hip3" type="revolute">
+					<parent link="left_hip21"/>
+					<child link="left_hip3"/>
+					<origin xyz="0 0 -0.1225"/>
+					<axis xyz="0 0 1"/>	
+					<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+				</joint>
+
+								<link name="left_knee">
+									<visual>		  
+										<geometry>
+											<box size="0.07 0.07 0.375" />
+										</geometry>
+										<origin xyz="0 0 -0.1525" rpy="0 0 0" />
+										<material name="blue">
+											<color rgba="0 0 0.8 1" />
+										</material>
+									</visual>		
+								</link>
+
+								<joint name="left_knee" type="revolute">
+									<parent link="left_hip3"/>
+									<child link="left_knee"/>
+									<origin xyz="0 0.07 -0.0525"/>
+									<axis xyz="0 1 0"/>	
+									<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+								</joint>
+
+										<link name="left_ankle">
+											<visual>		  
+												<geometry>
+													<box size="0.07 0.07 0.07" />
+												</geometry>
+												<origin xyz="0 0 0" rpy="0 0 0" />
+												<material name="blue">
+													<color rgba="0 0 0.8 1" />
+												</material>
+											</visual>		
+										</link>
+
+										<joint name="left_ankle" type="revolute">
+											<parent link="left_knee"/>
+											<child link="left_ankle"/>
+											<origin xyz="0 -0.07 -0.305"/>
+											<axis xyz="0 1 0"/>	
+											<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+										</joint>
+
+																				<link name="left_ankle1">
+																					<visual>		  
+																						<geometry>
+																							<box size="0.07 0.07 0.17" />
+																						</geometry>
+																						<origin xyz="0 0 -0.05" rpy="0 0 0" />
+																						<material name="gray">
+																							<color rgba="0.2 0.2 0.2 1" />
+																						</material>
+																					</visual>		
+																				</link>
+
+																				<joint name="left_ankle1" type="fixed">
+																					<parent link="left_ankle"/>
+																					<child link="left_ankle1"/>
+																					<origin xyz="-0.07 0 0"/>		
+																				</joint>
+
+										<link name="left_ankle2">
+											<visual>		  
+												<geometry>
+													<box size="0.07 0.07 0.105" />
+												</geometry>
+												<origin xyz="0 0 -0.0175" rpy="0 0 0" />
+												<material name="blue">
+													<color rgba="0 0 0.8 1" />
+												</material>
+											</visual>		
+										</link>
+
+										<joint name="left_ankle2" type="revolute">
+											<parent link="left_ankle"/>
+											<child link="left_ankle2"/>
+											<origin xyz="0 0 -0.1"/>
+											<axis xyz="1 0 0"/>	
+											<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+										</joint>
+
+
+											<link name="left_foot">
+												<visual>		  
+													<geometry>
+														<box size="0.25 0.15 0.03" />
+													</geometry>
+													<origin xyz="0.02 0 0" rpy="0 0 0" />
+													<material name="blue">
+														<color rgba="0 0 0.8 1" />
+													</material>
+												</visual>		
+											</link>
+
+											<joint name="left_foot" type="fixed">
+												<parent link="left_ankle2"/>
+												<child link="left_foot"/>
+												<origin xyz="0 0 -0.085"/>
+											</joint>
+
+		
+
+	<link name="right_hip">
+		<visual>		  
+		  <geometry>
+		    <box size="0.09 0.09 0.225" />
+		  </geometry>
+			<origin xyz="0 0 -0.0675" rpy="0 0 0" />
+		  <material name="blue">
+		    <color rgba="0 0 0.8 1" />
+		  </material>
+		</visual>		
+	</link>
+
+	<joint name="body_to_right_hip" type="revolute">
+		<parent link="base_link"/>
+		<child link="right_hip"/>
+		<origin xyz="0 -0.125 0"/>
+		<axis xyz="0 1 0"/>	
+		<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+	</joint>
+
+			<link name="right_hip2">
+					<visual>		  
+						<geometry>
+							<box size="0.09 0.09 0.185" />
+						</geometry>
+						<origin xyz="0 0 -0.0475" rpy="0 0 0" />
+						<material name="gray">
+							<color rgba="0.2 0.2 0.2 1" />
+						</material>
+					</visual>		
+				</link>
+
+				<joint name="right_hip2" type="revolute">
+					<parent link="right_hip"/>
+					<child link="right_hip2"/>
+					<origin xyz="-0.09 0 -0.135"/>
+					<axis xyz="1 0 0"/>	
+					<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+				</joint>
+
+													<link name="right_hip21">
+																<visual>		  
+																	<geometry>
+																		<box size="0.08 0.07 0.07" />
+																	</geometry>
+																	<origin xyz="0 0 0" rpy="0 0 0" />
+																	<material name="blue">
+																		<color rgba="0 0 0.8 1" />
+																	</material>
+																</visual>		
+															</link>
+
+															<joint name="right_hip21" type="fixed">
+																<parent link="right_hip2"/>
+																<child link="right_hip21"/>
+																<origin xyz="0.075 0 -0.105"/>							
+															</joint>
+
+					<link name="right_hip3">
+						<visual>		  
+							<geometry>
+								<box size="0.07 0.07 0.175" />
+							</geometry>
+							<origin xyz="0 0 0" rpy="0 0 0" />
+							<material name="gray">
+								<color rgba="0.2 0.2 0.2 1" />
+							</material>
+						</visual>		
+					</link>
+
+					<joint name="right_hip3" type="revolute">
+						<parent link="right_hip21"/>
+						<child link="right_hip3"/>
+						<origin xyz="0 0 -0.1225"/>
+						<axis xyz="0 0 1"/>	
+						<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+					</joint>
+
+
+									<link name="right_knee">
+										<visual>		  
+											<geometry>
+												<box size="0.07 0.07 0.375" />
+											</geometry>
+											<origin xyz="0 0 -0.1525" rpy="0 0 0" />
+											<material name="blue">
+												<color rgba="0 0 0.8 1" />
+											</material>
+										</visual>		
+									</link>
+
+									<joint name="right_knee" type="revolute">
+										<parent link="right_hip3"/>
+										<child link="right_knee"/>
+										<origin xyz="0 -0.07 -0.0525"/>
+										<axis xyz="0 1 0"/>	
+										<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+									</joint>
+
+										<link name="right_ankle">
+											<visual>		  
+												<geometry>
+													<box size="0.07 0.07 0.07" />
+												</geometry>
+												<origin xyz="0 0 0" rpy="0 0 0" />
+												<material name="blue">
+													<color rgba="0 0 0.8 1" />
+												</material>
+											</visual>		
+										</link>
+
+										<joint name="right_ankle" type="revolute">
+											<parent link="right_knee"/>
+											<child link="right_ankle"/>
+											<origin xyz="0 0.07 -0.305"/>
+											<axis xyz="0 1 0"/>	
+											<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+										</joint>
+
+																				<link name="right_ankle1">
+																					<visual>		  
+																						<geometry>
+																							<box size="0.07 0.07 0.17" />
+																						</geometry>
+																						<origin xyz="0 0 -0.05" rpy="0 0 0" />
+																						<material name="gray">
+																							<color rgba="0.2 0.2 0.2 1" />
+																						</material>
+																					</visual>		
+																				</link>
+
+																				<joint name="right_ankle1" type="fixed">
+																					<parent link="right_ankle"/>
+																					<child link="right_ankle1"/>
+																					<origin xyz="-0.07 0 0"/>		
+																				</joint>
+
+													<link name="right_ankle2">
+														<visual>		  
+															<geometry>
+																<box size="0.07 0.07 0.105" />
+															</geometry>
+															<origin xyz="0 0 -0.0175" rpy="0 0 0" />
+															<material name="blue">
+																<color rgba="0 0 0.8 1" />
+															</material>
+														</visual>		
+													</link>
+
+													<joint name="right_ankle2" type="revolute">
+														<parent link="right_ankle"/>
+														<child link="right_ankle2"/>
+														<origin xyz="0 0 -0.1"/>
+														<axis xyz="1 0 0"/>	
+														<limit upper="0.5" lower="-0.5" effort="1000" velocity="100"/>		
+													</joint>
+
+
+													<link name="right_foot">
+															<visual>		  
+																<geometry>
+																	<box size="0.25 0.15 0.03" />
+																</geometry>
+																<origin xyz="0.02 0 0" rpy="0 0 0" />
+																<material name="blue">
+																	<color rgba="0 0 0.8 1" />
+																</material>
+															</visual>		
+														</link>
+
+														<joint name="right_foot" type="fixed">
+															<parent link="right_ankle2"/>
+															<child link="right_foot"/>
+															<origin xyz="0 0 -0.085"/>
+														</joint>
+
+
+</robot>

@@ -84,37 +84,6 @@ clean: CMakeFiles/clean_test_results.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/download_extra_data.dir
-
-# All Build rule for target.
-CMakeFiles/download_extra_data.dir/all:
-	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/depend
-	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles 
-	@echo "Built target download_extra_data"
-.PHONY : CMakeFiles/download_extra_data.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/download_extra_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/download_extra_data.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
-.PHONY : CMakeFiles/download_extra_data.dir/rule
-
-# Convenience name for target.
-download_extra_data: CMakeFiles/download_extra_data.dir/rule
-.PHONY : download_extra_data
-
-# clean rule for target.
-CMakeFiles/download_extra_data.dir/clean:
-	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/clean
-.PHONY : CMakeFiles/download_extra_data.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/download_extra_data.dir/clean
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
 
 # All Build rule for target.
@@ -663,6 +632,7 @@ urdf_info/all: urdf_info/CMakeFiles/categorize.dir/all
 urdf_info/all: urdf_info/CMakeFiles/full_info.dir/all
 urdf_info/all: urdf_info/CMakeFiles/hello_world.dir/all
 urdf_info/all: urdf_info/CMakeFiles/import_tree.dir/all
+urdf_info/all: urdf_info/CMakeFiles/pointcloud.dir/all
 .PHONY : urdf_info/all
 
 # Convenience name for "clean" pass in the directory.
@@ -670,6 +640,7 @@ urdf_info/clean: urdf_info/CMakeFiles/categorize.dir/clean
 urdf_info/clean: urdf_info/CMakeFiles/full_info.dir/clean
 urdf_info/clean: urdf_info/CMakeFiles/hello_world.dir/clean
 urdf_info/clean: urdf_info/CMakeFiles/import_tree.dir/clean
+urdf_info/clean: urdf_info/CMakeFiles/pointcloud.dir/clean
 .PHONY : urdf_info/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -814,6 +785,41 @@ urdf_info/CMakeFiles/import_tree.dir/clean:
 
 # clean rule for target.
 clean: urdf_info/CMakeFiles/import_tree.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target urdf_info/CMakeFiles/pointcloud.dir
+
+# All Build rule for target.
+urdf_info/CMakeFiles/pointcloud.dir/all:
+	$(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/depend
+	$(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/viki/urdf_info/build/CMakeFiles  8
+	@echo "Built target pointcloud"
+.PHONY : urdf_info/CMakeFiles/pointcloud.dir/all
+
+# Include target in all.
+all: urdf_info/CMakeFiles/pointcloud.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+urdf_info/CMakeFiles/pointcloud.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/pointcloud.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/viki/urdf_info/build/CMakeFiles 0
+.PHONY : urdf_info/CMakeFiles/pointcloud.dir/rule
+
+# Convenience name for target.
+pointcloud: urdf_info/CMakeFiles/pointcloud.dir/rule
+.PHONY : pointcloud
+
+# clean rule for target.
+urdf_info/CMakeFiles/pointcloud.dir/clean:
+	$(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/clean
+.PHONY : urdf_info/CMakeFiles/pointcloud.dir/clean
+
+# clean rule for target.
+clean: urdf_info/CMakeFiles/pointcloud.dir/clean
 .PHONY : clean
 
 #=============================================================================

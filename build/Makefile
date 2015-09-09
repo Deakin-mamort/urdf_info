@@ -163,19 +163,6 @@ clean_test_results/fast:
 .PHONY : clean_test_results/fast
 
 #=============================================================================
-# Target rules for targets named download_extra_data
-
-# Build rule for target.
-download_extra_data: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 download_extra_data
-.PHONY : download_extra_data
-
-# fast build rule for target.
-download_extra_data/fast:
-	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-.PHONY : download_extra_data/fast
-
-#=============================================================================
 # Target rules for targets named doxygen
 
 # Build rule for target.
@@ -435,6 +422,19 @@ import_tree/fast:
 	$(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/build
 .PHONY : import_tree/fast
 
+#=============================================================================
+# Target rules for targets named pointcloud
+
+# Build rule for target.
+pointcloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pointcloud
+.PHONY : pointcloud
+
+# fast build rule for target.
+pointcloud/fast:
+	$(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/build
+.PHONY : pointcloud/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -442,7 +442,6 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... clean_test_results"
-	@echo "... download_extra_data"
 	@echo "... doxygen"
 	@echo "... edit_cache"
 	@echo "... install"
@@ -470,6 +469,7 @@ help:
 	@echo "... full_info"
 	@echo "... hello_world"
 	@echo "... import_tree"
+	@echo "... pointcloud"
 .PHONY : help
 
 

@@ -205,6 +205,20 @@ import_tree/fast:
 	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/build
 .PHONY : import_tree/fast
 
+# Convenience name for target.
+urdf_info/CMakeFiles/pointcloud.dir/rule:
+	cd /home/viki/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/pointcloud.dir/rule
+.PHONY : urdf_info/CMakeFiles/pointcloud.dir/rule
+
+# Convenience name for target.
+pointcloud: urdf_info/CMakeFiles/pointcloud.dir/rule
+.PHONY : pointcloud
+
+# fast build rule for target.
+pointcloud/fast:
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/build
+.PHONY : pointcloud/fast
+
 src/categorize.o: src/categorize.cpp.o
 .PHONY : src/categorize.o
 
@@ -301,6 +315,30 @@ src/import_tree.cpp.s:
 	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/import_tree.dir/build.make urdf_info/CMakeFiles/import_tree.dir/src/import_tree.cpp.s
 .PHONY : src/import_tree.cpp.s
 
+src/pointcloud.o: src/pointcloud.cpp.o
+.PHONY : src/pointcloud.o
+
+# target to build an object file
+src/pointcloud.cpp.o:
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/src/pointcloud.cpp.o
+.PHONY : src/pointcloud.cpp.o
+
+src/pointcloud.i: src/pointcloud.cpp.i
+.PHONY : src/pointcloud.i
+
+# target to preprocess a source file
+src/pointcloud.cpp.i:
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/src/pointcloud.cpp.i
+.PHONY : src/pointcloud.cpp.i
+
+src/pointcloud.s: src/pointcloud.cpp.s
+.PHONY : src/pointcloud.s
+
+# target to generate assembly for a file
+src/pointcloud.cpp.s:
+	cd /home/viki/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/src/pointcloud.cpp.s
+.PHONY : src/pointcloud.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -316,6 +354,7 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... pointcloud"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... src/categorize.o"
@@ -330,6 +369,9 @@ help:
 	@echo "... src/import_tree.o"
 	@echo "... src/import_tree.i"
 	@echo "... src/import_tree.s"
+	@echo "... src/pointcloud.o"
+	@echo "... src/pointcloud.i"
+	@echo "... src/pointcloud.s"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+<robot><gazebo><controller:gazebo_ros_controller_manager name="gazebo_ros_controller_manager" plugin="libgazebo_ros_controller_manager.so"><alwaysOn>true</alwaysOn><updateRate>1000.0</updateRate></controller:gazebo_ros_controller_manager></gazebo></robot>

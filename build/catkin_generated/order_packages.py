@@ -2,4 +2,4 @@
 source_root_dir = "/home/viki/urdf_info/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/viki/urdf_info/devel;/opt/ros/indigo".split(';') if "/home/viki/urdf_info/devel;/opt/ros/indigo" != "" else []
+underlay_workspaces = "/home/viki/ros_ws/devel;/home/viki/urdf_info/devel;/opt/ros/indigo".split(';') if "/home/viki/ros_ws/devel;/home/viki/urdf_info/devel;/opt/ros/indigo" != "" else []

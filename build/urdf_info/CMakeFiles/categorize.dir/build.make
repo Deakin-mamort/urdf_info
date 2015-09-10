@@ -84,12 +84,12 @@ categorize_EXTERNAL_OBJECTS =
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /opt/ros/indigo/lib/libkdl_parser.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /opt/ros/indigo/lib/liborocos-kdl.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /opt/ros/indigo/lib/liborocos-kdl.so.1.3.0
-/home/viki/urdf_info/devel/lib/urdf_info/categorize: /usr/lib/x86_64-linux-gnu/libtinyxml.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /opt/ros/indigo/lib/liburdf.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /usr/lib/x86_64-linux-gnu/liburdfdom_sensor.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /usr/lib/x86_64-linux-gnu/liburdfdom_model_state.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /usr/lib/x86_64-linux-gnu/liburdfdom_model.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /usr/lib/x86_64-linux-gnu/liburdfdom_world.so
+/home/viki/urdf_info/devel/lib/urdf_info/categorize: /usr/lib/x86_64-linux-gnu/libtinyxml.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /opt/ros/indigo/lib/librosconsole_bridge.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /opt/ros/indigo/lib/libroscpp.so
 /home/viki/urdf_info/devel/lib/urdf_info/categorize: /usr/lib/x86_64-linux-gnu/libboost_signals.so

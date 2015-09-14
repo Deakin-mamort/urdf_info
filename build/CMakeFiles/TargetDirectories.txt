@@ -1,7 +1,6 @@
 /home/viki/urdf_info/build/agitr/CMakeFiles/_catkin_empty_exported_target.dir
 /home/viki/urdf_info/build/urdf_info/CMakeFiles/categorize.dir
 /home/viki/urdf_info/build/CMakeFiles/clean_test_results.dir
-/home/viki/urdf_info/build/CMakeFiles/download_extra_data.dir
 /home/viki/urdf_info/build/CMakeFiles/doxygen.dir
 /home/viki/urdf_info/build/urdf_info/CMakeFiles/full_info.dir
 /home/viki/urdf_info/build/gtest/CMakeFiles/gtest.dir

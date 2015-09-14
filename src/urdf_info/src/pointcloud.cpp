@@ -35,7 +35,7 @@ vector<string> getJoints(shared_ptr<ModelInterface> robot)
 	for (map<string,shared_ptr<Joint> >::iterator joint = robot->joints_.begin();joint != robot->joints_.end(); joint++)
 	{
 		if(joint->second->type != 6){
-			cout << joint->second->name << "\t" << joint->second->type << endl;
+		//	cout << joint->second->name << "\t" << joint->second->type << endl;
 			joints.push_back(joint->second->child_link_name);
 		}
 	}
@@ -92,7 +92,7 @@ void printEffectors(vector<KDL::Frame> effectors)
 {
 		for (vector<KDL::Frame>::iterator it = effectors.begin(); it != effectors.end(); it++){
 			KDL::Frame temp = *it;
-			cout << temp.p << "\n";
+			cout << temp.p(0) << "," << setw(20) << temp.p(1) << "," << setw(20) << temp.p(2) << "\n";
 		}
 }	
 int main(int argc, char** argv)

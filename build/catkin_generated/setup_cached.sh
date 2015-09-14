@@ -7,6 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH="/home/viki/ros_ws/devel/lib/x86_64-linux-gnu:/home/viki/urdf_info/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/viki/ros_ws/devel/lib:/home/viki/urdf_info/devel/lib:/opt/ros/indigo/lib"
-export PKG_CONFIG_PATH="/home/viki/ros_ws/devel/lib/x86_64-linux-gnu/pkgconfig:/home/viki/urdf_info/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/viki/ros_ws/devel/lib/pkgconfig:/home/viki/urdf_info/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
+export LD_LIBRARY_PATH="/home/viki/urdf_info/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/viki/urdf_info/devel/lib:/opt/ros/indigo/lib"
+export PKG_CONFIG_PATH="/home/viki/urdf_info/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/viki/urdf_info/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
 export PWD="/home/viki/urdf_info/build"

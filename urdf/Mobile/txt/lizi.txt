@@ -1,0 +1,7 @@
+[33m[ WARN] [1442377028.697835693]: The root link lizi_$(arg lizi_id)_base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.[0m
+0.081249,                   0,            0.092091
+0.0807601,         -0.00041349,            0.172091
+0.118,              0.1338,               0.026
+0.118,             -0.1338,               0.026
+-0.118,              0.1338,               0.026
+-0.118,             -0.1338,               0.026

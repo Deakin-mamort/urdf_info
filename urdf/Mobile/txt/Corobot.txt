@@ -1,0 +1,6 @@
+[33m[ WARN] [1442376915.582256383]: The root link base_footprint has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.[0m
+0.1316,             -0.1016,           -0.025369
+-0.1316,             -0.1016,           -0.025432
+0,                   0,             0.02665
+0.1316,              0.1016,           -0.025369
+-0.1316,              0.1016,           -0.025432

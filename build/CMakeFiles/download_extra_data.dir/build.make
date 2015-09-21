@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/urdf_info/src
+CMAKE_SOURCE_DIR = /home/mick/urdf_info/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/urdf_info/build
+CMAKE_BINARY_DIR = /home/mick/urdf_info/build
 
 # Utility rule file for download_extra_data.
 
@@ -60,6 +60,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/viki/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/urdf_info/src /home/viki/urdf_info/src /home/viki/urdf_info/build /home/viki/urdf_info/build /home/viki/urdf_info/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mick/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mick/urdf_info/src /home/mick/urdf_info/src /home/mick/urdf_info/build /home/mick/urdf_info/build /home/mick/urdf_info/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

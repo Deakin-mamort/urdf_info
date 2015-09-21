@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/pointcloud.dir/src/pointcloud.cpp.o"
-  "/home/viki/urdf_info/devel/lib/urdf_info/pointcloud.pdb"
-  "/home/viki/urdf_info/devel/lib/urdf_info/pointcloud"
+  "/home/mick/urdf_info/devel/lib/urdf_info/pointcloud.pdb"
+  "/home/mick/urdf_info/devel/lib/urdf_info/pointcloud"
 )
 
 # Per-language clean rules from dependency scanning.

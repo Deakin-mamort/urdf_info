@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/viki/urdf_info/src/urdf_info/src/hello.cpp
+/home/mick/urdf_info/src/urdf_info/src/hello.cpp
 ros/ros.h
 -
 

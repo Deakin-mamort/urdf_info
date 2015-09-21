@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/urdf_info/src
+CMAKE_SOURCE_DIR = /home/mick/urdf_info/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/urdf_info/build
+CMAKE_BINARY_DIR = /home/mick/urdf_info/build
 
 # Utility rule file for clean_test_results.
 
@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/viki/urdf_info/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/cmake -E remove_directory /home/viki/urdf_info/build/test_results
+	/usr/bin/cmake -E remove_directory /home/mick/urdf_info/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -61,6 +61,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/viki/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/urdf_info/src /home/viki/urdf_info/src /home/viki/urdf_info/build /home/viki/urdf_info/build /home/viki/urdf_info/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mick/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mick/urdf_info/src /home/mick/urdf_info/src /home/mick/urdf_info/build /home/mick/urdf_info/build /home/mick/urdf_info/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

@@ -1,8 +1,8 @@
-prefix=/home/viki/urdf_info/install
+prefix=/home/mick/urdf_info/install
 
 Name: agitr
 Description: Description of agitr
 Version: 0.0.1
 Cflags: 
-Libs: -L/home/viki/urdf_info/install/lib 
+Libs: -L/home/mick/urdf_info/install/lib 
 Requires: 

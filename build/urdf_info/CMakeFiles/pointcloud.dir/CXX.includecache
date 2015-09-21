@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/viki/urdf_info/src/urdf_info/src/pointcloud.cpp
+/home/mick/urdf_info/src/urdf_info/src/pointcloud.cpp
 urdf_model/model.h
-/home/viki/urdf_info/src/urdf_info/src/urdf_model/model.h
+/home/mick/urdf_info/src/urdf_info/src/urdf_model/model.h
 urdf_parser/urdf_parser.h
-/home/viki/urdf_info/src/urdf_info/src/urdf_parser/urdf_parser.h
+/home/mick/urdf_info/src/urdf_info/src/urdf_parser/urdf_parser.h
 kdl_parser/kdl_parser.hpp
-/home/viki/urdf_info/src/urdf_info/src/kdl_parser/kdl_parser.hpp
+/home/mick/urdf_info/src/urdf_info/src/kdl_parser/kdl_parser.hpp
 kdl/chain.hpp
 -
 kdl/chainfksolver.hpp

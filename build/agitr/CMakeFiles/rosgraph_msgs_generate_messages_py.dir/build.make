@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/viki/urdf_info/src
+CMAKE_SOURCE_DIR = /home/mick/urdf_info/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/viki/urdf_info/build
+CMAKE_BINARY_DIR = /home/mick/urdf_info/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_py.
 
@@ -56,10 +56,10 @@ agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build: rosgraph_msgs_gen
 .PHONY : agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 
 agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	cd /home/viki/urdf_info/build/agitr && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/mick/urdf_info/build/agitr && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend:
-	cd /home/viki/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/viki/urdf_info/src /home/viki/urdf_info/src/agitr /home/viki/urdf_info/build /home/viki/urdf_info/build/agitr /home/viki/urdf_info/build/agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mick/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mick/urdf_info/src /home/mick/urdf_info/src/agitr /home/mick/urdf_info/build /home/mick/urdf_info/build/agitr /home/mick/urdf_info/build/agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : agitr/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
 

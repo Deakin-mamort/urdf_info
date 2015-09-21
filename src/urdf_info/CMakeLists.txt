@@ -9,6 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
 			 roscpp
 			 urdf
 			 kdl_parser
+			 tf
 			)
 find_package(urdfdom_headers REQUIRED)
 find_package(console_bridge REQUIRED)
@@ -46,6 +47,7 @@ add_executable(full_info src/full_info.cpp)
 add_executable(import_tree src/import_tree.cpp)
 add_executable(categorize src/categorize.cpp)
 add_executable(pointcloud src/pointcloud.cpp)
+add_executable(getTransform src/getTransform.cpp)
 
 #Specify libraries against which to link (line for each executable)
 target_link_libraries(hello_world ${catkin_LIBRARIES})
@@ -53,3 +55,4 @@ target_link_libraries(full_info ${catkin_LIBRARIES})
 target_link_libraries(import_tree ${catkin_LIBRARIES})
 target_link_libraries(categorize ${catkin_LIBRARIES})
 target_link_libraries(pointcloud ${catkin_LIBRARIES})
+target_link_libraries(getTransform ${catkin_LIBRARIES})

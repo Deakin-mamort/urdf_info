@@ -35,7 +35,7 @@ vector<string> getJoints(shared_ptr<ModelInterface> robot)
 	for (map<string,shared_ptr<Joint> >::iterator joint = robot->joints_.begin();joint != robot->joints_.end(); joint++)
 	{
 		if(joint->second->type != 6){
-		//	cout << joint->second->name << "\t" << joint->second->type << endl;
+			cout << joint->second->name << "\t" << joint->second->type << endl;
 			joints.push_back(joint->second->child_link_name);
 		}
 	}
@@ -133,7 +133,6 @@ int main(int argc, char** argv)
 	
 	vector<string> joints = getJoints(robot1);
 	shared_ptr<const Link> root_link = robot1->getRoot();
-	
 	vector<KDL::Chain> activeChains = getChains(root_link, kdl_tree, joints);;
 	vector<KDL::Frame> endEffectors = getCarts(joints, activeChains);
 	printEffectors(endEffectors);

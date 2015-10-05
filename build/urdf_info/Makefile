@@ -346,6 +346,160 @@ import_tree/fast:
 .PHONY : import_tree/fast
 
 # Convenience name for target.
+urdf_info/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+.PHONY : urdf_info/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_cpp: urdf_info/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/rule
+.PHONY : moveit_msgs_generate_messages_cpp
+
+# fast build rule for target.
+moveit_msgs_generate_messages_cpp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build.make urdf_info/CMakeFiles/moveit_msgs_generate_messages_cpp.dir/build
+.PHONY : moveit_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+.PHONY : urdf_info/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_lisp: urdf_info/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/rule
+.PHONY : moveit_msgs_generate_messages_lisp
+
+# fast build rule for target.
+moveit_msgs_generate_messages_lisp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build.make urdf_info/CMakeFiles/moveit_msgs_generate_messages_lisp.dir/build
+.PHONY : moveit_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+.PHONY : urdf_info/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+moveit_msgs_generate_messages_py: urdf_info/CMakeFiles/moveit_msgs_generate_messages_py.dir/rule
+.PHONY : moveit_msgs_generate_messages_py
+
+# fast build rule for target.
+moveit_msgs_generate_messages_py/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/moveit_msgs_generate_messages_py.dir/build.make urdf_info/CMakeFiles/moveit_msgs_generate_messages_py.dir/build
+.PHONY : moveit_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
+.PHONY : urdf_info/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
+
+# Convenience name for target.
+moveit_ros_manipulation_gencfg: urdf_info/CMakeFiles/moveit_ros_manipulation_gencfg.dir/rule
+.PHONY : moveit_ros_manipulation_gencfg
+
+# fast build rule for target.
+moveit_ros_manipulation_gencfg/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build.make urdf_info/CMakeFiles/moveit_ros_manipulation_gencfg.dir/build
+.PHONY : moveit_ros_manipulation_gencfg/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/moveit_ros_planning_gencfg.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
+.PHONY : urdf_info/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
+
+# Convenience name for target.
+moveit_ros_planning_gencfg: urdf_info/CMakeFiles/moveit_ros_planning_gencfg.dir/rule
+.PHONY : moveit_ros_planning_gencfg
+
+# fast build rule for target.
+moveit_ros_planning_gencfg/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/moveit_ros_planning_gencfg.dir/build.make urdf_info/CMakeFiles/moveit_ros_planning_gencfg.dir/build
+.PHONY : moveit_ros_planning_gencfg/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+.PHONY : urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_cpp: urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/rule
+.PHONY : object_recognition_msgs_generate_messages_cpp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_cpp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build.make urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_cpp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+.PHONY : urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_lisp: urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/rule
+.PHONY : object_recognition_msgs_generate_messages_lisp
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_lisp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build.make urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
+.PHONY : object_recognition_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+.PHONY : urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+object_recognition_msgs_generate_messages_py: urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/rule
+.PHONY : object_recognition_msgs_generate_messages_py
+
+# fast build rule for target.
+object_recognition_msgs_generate_messages_py/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build.make urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_py.dir/build
+.PHONY : object_recognition_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+.PHONY : urdf_info/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_cpp: urdf_info/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/rule
+.PHONY : octomap_msgs_generate_messages_cpp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_cpp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build.make urdf_info/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
+.PHONY : octomap_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+.PHONY : urdf_info/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_lisp: urdf_info/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/rule
+.PHONY : octomap_msgs_generate_messages_lisp
+
+# fast build rule for target.
+octomap_msgs_generate_messages_lisp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build.make urdf_info/CMakeFiles/octomap_msgs_generate_messages_lisp.dir/build
+.PHONY : octomap_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+.PHONY : urdf_info/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+octomap_msgs_generate_messages_py: urdf_info/CMakeFiles/octomap_msgs_generate_messages_py.dir/rule
+.PHONY : octomap_msgs_generate_messages_py
+
+# fast build rule for target.
+octomap_msgs_generate_messages_py/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/octomap_msgs_generate_messages_py.dir/build.make urdf_info/CMakeFiles/octomap_msgs_generate_messages_py.dir/build
+.PHONY : octomap_msgs_generate_messages_py/fast
+
+# Convenience name for target.
 urdf_info/CMakeFiles/pointcloud.dir/rule:
 	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/pointcloud.dir/rule
 .PHONY : urdf_info/CMakeFiles/pointcloud.dir/rule
@@ -358,6 +512,20 @@ pointcloud: urdf_info/CMakeFiles/pointcloud.dir/rule
 pointcloud/fast:
 	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/build
 .PHONY : pointcloud/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/random_poses.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/random_poses.dir/rule
+.PHONY : urdf_info/CMakeFiles/random_poses.dir/rule
+
+# Convenience name for target.
+random_poses: urdf_info/CMakeFiles/random_poses.dir/rule
+.PHONY : random_poses
+
+# fast build rule for target.
+random_poses/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/random_poses.dir/build.make urdf_info/CMakeFiles/random_poses.dir/build
+.PHONY : random_poses/fast
 
 # Convenience name for target.
 urdf_info/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
@@ -400,6 +568,48 @@ sensor_msgs_generate_messages_py: urdf_info/CMakeFiles/sensor_msgs_generate_mess
 sensor_msgs_generate_messages_py/fast:
 	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make urdf_info/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+.PHONY : urdf_info/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_cpp: urdf_info/CMakeFiles/shape_msgs_generate_messages_cpp.dir/rule
+.PHONY : shape_msgs_generate_messages_cpp
+
+# fast build rule for target.
+shape_msgs_generate_messages_cpp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build.make urdf_info/CMakeFiles/shape_msgs_generate_messages_cpp.dir/build
+.PHONY : shape_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+.PHONY : urdf_info/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_lisp: urdf_info/CMakeFiles/shape_msgs_generate_messages_lisp.dir/rule
+.PHONY : shape_msgs_generate_messages_lisp
+
+# fast build rule for target.
+shape_msgs_generate_messages_lisp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build.make urdf_info/CMakeFiles/shape_msgs_generate_messages_lisp.dir/build
+.PHONY : shape_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/shape_msgs_generate_messages_py.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+.PHONY : urdf_info/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+shape_msgs_generate_messages_py: urdf_info/CMakeFiles/shape_msgs_generate_messages_py.dir/rule
+.PHONY : shape_msgs_generate_messages_py
+
+# fast build rule for target.
+shape_msgs_generate_messages_py/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/shape_msgs_generate_messages_py.dir/build.make urdf_info/CMakeFiles/shape_msgs_generate_messages_py.dir/build
+.PHONY : shape_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 urdf_info/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
@@ -484,6 +694,90 @@ tf_generate_messages_py: urdf_info/CMakeFiles/tf_generate_messages_py.dir/rule
 tf_generate_messages_py/fast:
 	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/tf_generate_messages_py.dir/build.make urdf_info/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+.PHONY : urdf_info/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_cpp: urdf_info/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+.PHONY : trajectory_msgs_generate_messages_cpp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_cpp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make urdf_info/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+.PHONY : trajectory_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+.PHONY : urdf_info/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_lisp: urdf_info/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+.PHONY : trajectory_msgs_generate_messages_lisp
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_lisp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make urdf_info/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+.PHONY : trajectory_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+.PHONY : urdf_info/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+trajectory_msgs_generate_messages_py: urdf_info/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+.PHONY : trajectory_msgs_generate_messages_py
+
+# fast build rule for target.
+trajectory_msgs_generate_messages_py/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make urdf_info/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+.PHONY : trajectory_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+.PHONY : urdf_info/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_cpp: urdf_info/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+.PHONY : visualization_msgs_generate_messages_cpp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_cpp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make urdf_info/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+.PHONY : visualization_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : urdf_info/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_lisp: urdf_info/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+.PHONY : visualization_msgs_generate_messages_lisp
+
+# fast build rule for target.
+visualization_msgs_generate_messages_lisp/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make urdf_info/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+.PHONY : visualization_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+urdf_info/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
+	cd /home/mick/urdf_info/build && $(MAKE) -f CMakeFiles/Makefile2 urdf_info/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : urdf_info/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+visualization_msgs_generate_messages_py: urdf_info/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+.PHONY : visualization_msgs_generate_messages_py
+
+# fast build rule for target.
+visualization_msgs_generate_messages_py/fast:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make urdf_info/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+.PHONY : visualization_msgs_generate_messages_py/fast
 
 src/categorize.o: src/categorize.cpp.o
 .PHONY : src/categorize.o
@@ -629,6 +923,30 @@ src/pointcloud.cpp.s:
 	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/pointcloud.dir/build.make urdf_info/CMakeFiles/pointcloud.dir/src/pointcloud.cpp.s
 .PHONY : src/pointcloud.cpp.s
 
+src/random_poses.o: src/random_poses.cpp.o
+.PHONY : src/random_poses.o
+
+# target to build an object file
+src/random_poses.cpp.o:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/random_poses.dir/build.make urdf_info/CMakeFiles/random_poses.dir/src/random_poses.cpp.o
+.PHONY : src/random_poses.cpp.o
+
+src/random_poses.i: src/random_poses.cpp.i
+.PHONY : src/random_poses.i
+
+# target to preprocess a source file
+src/random_poses.cpp.i:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/random_poses.dir/build.make urdf_info/CMakeFiles/random_poses.dir/src/random_poses.cpp.i
+.PHONY : src/random_poses.cpp.i
+
+src/random_poses.s: src/random_poses.cpp.s
+.PHONY : src/random_poses.s
+
+# target to generate assembly for a file
+src/random_poses.cpp.s:
+	cd /home/mick/urdf_info/build && $(MAKE) -f urdf_info/CMakeFiles/random_poses.dir/build.make urdf_info/CMakeFiles/random_poses.dir/src/random_poses.cpp.s
+.PHONY : src/random_poses.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -654,11 +972,26 @@ help:
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
+	@echo "... moveit_msgs_generate_messages_cpp"
+	@echo "... moveit_msgs_generate_messages_lisp"
+	@echo "... moveit_msgs_generate_messages_py"
+	@echo "... moveit_ros_manipulation_gencfg"
+	@echo "... moveit_ros_planning_gencfg"
+	@echo "... object_recognition_msgs_generate_messages_cpp"
+	@echo "... object_recognition_msgs_generate_messages_lisp"
+	@echo "... object_recognition_msgs_generate_messages_py"
+	@echo "... octomap_msgs_generate_messages_cpp"
+	@echo "... octomap_msgs_generate_messages_lisp"
+	@echo "... octomap_msgs_generate_messages_py"
 	@echo "... pointcloud"
+	@echo "... random_poses"
 	@echo "... rebuild_cache"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... shape_msgs_generate_messages_cpp"
+	@echo "... shape_msgs_generate_messages_lisp"
+	@echo "... shape_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... tf2_msgs_generate_messages_cpp"
 	@echo "... tf2_msgs_generate_messages_lisp"
@@ -666,6 +999,12 @@ help:
 	@echo "... tf_generate_messages_cpp"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... tf_generate_messages_py"
+	@echo "... trajectory_msgs_generate_messages_cpp"
+	@echo "... trajectory_msgs_generate_messages_lisp"
+	@echo "... trajectory_msgs_generate_messages_py"
+	@echo "... visualization_msgs_generate_messages_cpp"
+	@echo "... visualization_msgs_generate_messages_lisp"
+	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... src/categorize.o"
 	@echo "... src/categorize.i"
 	@echo "... src/categorize.s"
@@ -684,6 +1023,9 @@ help:
 	@echo "... src/pointcloud.o"
 	@echo "... src/pointcloud.i"
 	@echo "... src/pointcloud.s"
+	@echo "... src/random_poses.o"
+	@echo "... src/random_poses.i"
+	@echo "... src/random_poses.s"
 .PHONY : help
 
 

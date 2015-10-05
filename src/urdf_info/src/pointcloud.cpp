@@ -35,7 +35,7 @@ vector<string> getJoints(shared_ptr<ModelInterface> robot)
 	for (map<string,shared_ptr<Joint> >::iterator joint = robot->joints_.begin();joint != robot->joints_.end(); joint++)
 	{
 		if(joint->second->type != 6){
-			cout << joint->second->name << "\t" << joint->second->type << endl;
+			cout << joint->second->parent_link_name << endl; // << "\t" << joint->second->type << endl;
 			joints.push_back(joint->second->child_link_name);
 		}
 	}

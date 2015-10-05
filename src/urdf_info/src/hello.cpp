@@ -1,4 +1,4 @@
-//This is a ROS versiojn of the standard "hello, world" program
+//This is a ROS version of the standard "hello, world" program
 //This header defines the standard ROS classes
 
 #include <ros/ros.h>

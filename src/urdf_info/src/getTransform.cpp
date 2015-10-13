@@ -1,15 +1,7 @@
 #include <ros/ros.h>
 #include <tf/transform_listener.h>
-#include <geometry_msgs/Twist.h>
-#include <turtlesim/Spawn.h>
-#include <string>
-#include <sstream>
-#include <iostream>
-#include <fstream>
-#include <iomanip>
 
 using namespace std;
-using namespace boost;
 
 int MAX_JOINTS = 50;
 

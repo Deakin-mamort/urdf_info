@@ -1,4 +1,5 @@
 #include <ros/ros.h>
+#include <tf/transform_listener.h>
 #include <moveit/robot_model/robot_model.h>
 #include <moveit/robot_state/robot_state.h>
 #include <moveit/robot_model_loader/robot_model_loader.h>
@@ -8,23 +9,29 @@
 #include <moveit_msgs/DisplayTrajectory.h>
 #include <moveit_msgs/AttachedCollisionObject.h>
 #include <moveit_msgs/CollisionObject.h>
+#include <fstream>
 
 using namespace std;
+using namespace boost;
+
+int MAX_JOINTS = 50;
 
 void printActiveJoints (vector<moveit::core::JointModel *> jointList);
 void printJointGroups (vector<string> jointGroups);
+void coords();
 
 int main(int argc, char **argv)
-{
-      int i = 0;
-      bool test=0;
-      ros::init(argc, argv, "move_group_interface_tutorial");
-      ros::NodeHandle node_handle;
+{     
+      // Check the number of parameters
+      if (argc < 2) {
+          //std::cerr << "Usage: " << argv[0] << " NAME" << std::endl;
+          cout << "requires no of poses" << endl;
+          return 1;
+      }
+
+      ros::init(argc, argv, "random_poses");
       ros::AsyncSpinner spinner(1);
       spinner.start();
-
-      //Allow time for RVIZ to load
-      //sleep(20.0);
       vector<moveit::core::JointModel *> joints;
 
       //Obtain model from rosparam
@@ -37,59 +44,73 @@ int main(int argc, char **argv)
       vector<string> groups = kinematic_model->getJointModelGroupNames();
       //Obtain active joint list
       joints = kinematic_model->getActiveJointModels();
-      //state.setToRandomPositions();
-      //state.update();
 
       //Assign group
       moveit::planning_interface::MoveGroup group("both_arms");
-
-      //Create planning interface
-      //moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
-
-      //Publish visualization plans to RVIZ
-      //ros::Publisher display_publisher = node_handle.advertise<moveit_msgs::DisplayTrajectory>("/move_group/display_planned_path", 1, true);
-      //moveit_msgs::DisplayTrajectory display_trajectory;
-
-      /*
-      //Publish information
-      ROS_INFO("Reference frame: %s", group.getPlanningFrame().c_str());
-      ROS_INFO("Reference frame: %s", group.getEndEffectorLink().c_str());
-      ROS_INFO(group.getName().c_str());
-      ROS_INFO(group.getEndEffector().c_str());
-      //Set plan
-      geometry_msgs::Pose target_pose1;
-      target_pose1.orientation.w = 0.1779;
-      target_pose1.position.x = 0.4618;
-      target_pose1.position.y = 0.5103;
-      target_pose1.position.z = -0.5057;
-      group.setPoseTarget(target_pose1, "left_gripper");
-      */
-
       moveit::planning_interface::MoveGroup::Plan my_plan;
       bool success=false;
-      int good=0;
-      int bad=0;
 
+      int poses = atoi(argv[1]);
       //Run Random Poses
-      for (int i=0; i<10; i++){
+      for (int i=0; i<poses; i++){
         group.setRandomTarget();
         success = group.plan(my_plan);
 
         if(success==1){
-            //test=1;
             success = group.move();
             if (success == 1) {
-                cout<< endl << "Good Move" << endl << endl;
-                ros::Duration(30).sleep();
+                //cout << "Good Move" << endl;
+                coords();
+                ros::Duration(10).sleep();
             }
-            else{cout<< endl << "Bad Move" << endl << endl;}
+            else{i--;}//cout<< "Bad Move" << endl;}
         }
-        else {cout<< endl << "Bad Plan" << endl << endl;}
-
-        //vector<double> group_variable_values;
-        //group.getCurrentState()->copyJointGroupPositions(group.getCurrentState()->getRobotModel()->getJointModelGroup(group.getName()), group_variable_values);
+        else {i--;}//cout<< "Bad Plan" <<endl;}
       }
 }
+
+void coords(){
+
+    //Baxter
+    const char *args[] = { "head", "right_upper_shoulder", "right_lower_shoulder", "right_upper_elbow", "right_lower_elbow", "right_upper_forearm", "right_lower_forearm", "right_wrist",
+                           "left_upper_shoulder", "left_lower_shoulder", "left_upper_elbow", "left_lower_elbow", "left_upper_forearm", "left_lower_forearm", "left_wrist"};
+
+    int s = sizeof(args)/sizeof(*args);
+    std::vector<std::string> links(args, args+s);
+
+    tf::TransformListener listener;
+    tf::StampedTransform transform;
+    fstream file("joints.txt", std::fstream::in | std::fstream::out | std::fstream::app);
+
+    //error first round?
+    try{
+      listener.lookupTransform("/base", "/head",ros::Time(0), transform);
+    }
+    catch (tf::TransformException &ex) {
+      ROS_ERROR("%s",ex.what());
+      ros::Duration(1.0).sleep();
+
+    }
+
+    //Obtain coordinates of joints
+    for(int i=0; i < links.size(); i++){
+
+        listener.lookupTransform("/base", links[i],ros::Time(0), transform);
+
+        file << transform.getOrigin().x() << ", ";
+        file << transform.getOrigin().y() << ", ";
+        file << transform.getOrigin().z() << ", ";
+    }
+
+    //fill remaining inputs with zeo
+    for(int i = s; i < MAX_JOINTS-1; i++){
+        file << "0" << ", ";
+        file << "0" << ", ";
+        file << "0" << ", ";
+    }
+    file << "0" << endl;
+}
+
 //list active joints
 void printActiveJoints(vector<moveit::core::JointModel *> jointList){
     int i = 0;
@@ -100,7 +121,6 @@ void printActiveJoints(vector<moveit::core::JointModel *> jointList){
     }
     cout << endl;
 }
-
 //list joint groups
 void printJointGroups (vector<string> jointGroups){
     for (vector<string>::iterator it = jointGroups.begin(); it != jointGroups.end(); it++){cout << *it << endl;}

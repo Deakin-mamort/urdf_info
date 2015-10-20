@@ -80,6 +80,8 @@ void coords(){
 
     tf::TransformListener listener;
     tf::StampedTransform transform;
+    tf::Matrix3x3 m;
+    double r,p,y;
     fstream file("joints.txt", std::fstream::in | std::fstream::out | std::fstream::app);
 
     //error first round?
@@ -100,6 +102,12 @@ void coords(){
         file << transform.getOrigin().x() << ", ";
         file << transform.getOrigin().y() << ", ";
         file << transform.getOrigin().z() << ", ";
+        m = transform.getBasis();
+        m.getRPY(r,p,y);
+        file << r << ", ";
+        file << p << ", ";
+        file << y << ", ";
+
     }
 
     //fill remaining inputs with zeo

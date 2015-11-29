@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/getTransform.dir/src/getTransform.cpp.o"
-  "/home/mick/urdf_info/devel/lib/urdf_info/getTransform.pdb"
-  "/home/mick/urdf_info/devel/lib/urdf_info/getTransform"
+  "/home/prorip/urdf_info/devel/lib/urdf_info/getTransform.pdb"
+  "/home/prorip/urdf_info/devel/lib/urdf_info/getTransform"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mick/urdf_info/src
+CMAKE_SOURCE_DIR = /home/prorip/urdf_info/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mick/urdf_info/build
+CMAKE_BINARY_DIR = /home/prorip/urdf_info/build
 
 # Utility rule file for object_recognition_msgs_generate_messages_lisp.
 
@@ -56,10 +56,10 @@ urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build: o
 .PHONY : urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/build
 
 urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/clean:
-	cd /home/mick/urdf_info/build/urdf_info && $(CMAKE_COMMAND) -P CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/prorip/urdf_info/build/urdf_info && $(CMAKE_COMMAND) -P CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/clean
 
 urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/depend:
-	cd /home/mick/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mick/urdf_info/src /home/mick/urdf_info/src/urdf_info /home/mick/urdf_info/build /home/mick/urdf_info/build/urdf_info /home/mick/urdf_info/build/urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prorip/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prorip/urdf_info/src /home/prorip/urdf_info/src/urdf_info /home/prorip/urdf_info/build /home/prorip/urdf_info/build/urdf_info /home/prorip/urdf_info/build/urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : urdf_info/CMakeFiles/object_recognition_msgs_generate_messages_lisp.dir/depend
 

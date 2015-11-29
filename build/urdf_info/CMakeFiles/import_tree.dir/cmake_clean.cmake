@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/import_tree.dir/src/import_tree.cpp.o"
-  "/home/mick/urdf_info/devel/lib/urdf_info/import_tree.pdb"
-  "/home/mick/urdf_info/devel/lib/urdf_info/import_tree"
+  "/home/prorip/urdf_info/devel/lib/urdf_info/import_tree.pdb"
+  "/home/prorip/urdf_info/devel/lib/urdf_info/import_tree"
 )
 
 # Per-language clean rules from dependency scanning.

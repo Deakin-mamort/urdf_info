@@ -46,7 +46,7 @@ int main(int argc, char **argv)
       joints = kinematic_model->getActiveJointModels();
 
       //Assign group
-      moveit::planning_interface::MoveGroup group("both_arms");
+      moveit::planning_interface::MoveGroup group("manipulator");
       moveit::planning_interface::MoveGroup::Plan my_plan;
       bool success=false;
 
@@ -72,9 +72,10 @@ int main(int argc, char **argv)
 void coords(){
 
     //Baxter
-    const char *args[] = { "head", "right_upper_shoulder", "right_lower_shoulder", "right_upper_elbow", "right_lower_elbow", "right_upper_forearm", "right_lower_forearm", "right_wrist",
-                           "left_upper_shoulder", "left_lower_shoulder", "left_upper_elbow", "left_lower_elbow", "left_upper_forearm", "left_lower_forearm", "left_wrist"};
+    //const char *args[] = { "head", "right_upper_shoulder", "right_lower_shoulder", "right_upper_elbow", "right_lower_elbow", "right_upper_forearm", "right_lower_forearm", "right_wrist",
+    //                       "left_upper_shoulder", "left_lower_shoulder", "left_upper_elbow", "left_lower_elbow", "left_upper_forearm", "left_lower_forearm", "left_wrist"};
 
+    const char *args[] = { "link_1", "link_2", "link_3", "link_4", "link_5", "link_6", "tool0" };
     int s = sizeof(args)/sizeof(*args);
     std::vector<std::string> links(args, args+s);
 
@@ -83,10 +84,10 @@ void coords(){
     tf::Matrix3x3 m;
     double r,p,y;
     fstream file("joints.txt", std::fstream::in | std::fstream::out | std::fstream::app);
-
+    ros::Duration(1.0).sleep();
     //error first round?
     try{
-      listener.lookupTransform("/base", "/head",ros::Time(0), transform);
+      listener.lookupTransform("/base_link", "/link_1",ros::Time(0), transform);
     }
     catch (tf::TransformException &ex) {
       ROS_ERROR("%s",ex.what());
@@ -97,7 +98,7 @@ void coords(){
     //Obtain coordinates of joints
     for(int i=0; i < links.size(); i++){
 
-        listener.lookupTransform("/base", links[i],ros::Time(0), transform);
+        listener.lookupTransform("/base_link", links[i],ros::Time(0), transform);
 
         file << transform.getOrigin().x() << ", ";
         file << transform.getOrigin().y() << ", ";
@@ -107,6 +108,7 @@ void coords(){
         file << r << ", ";
         file << p << ", ";
         file << y << ", ";
+        ros::Duration(1.0).sleep();
 
     }
 
@@ -115,7 +117,15 @@ void coords(){
         file << "0" << ", ";
         file << "0" << ", ";
         file << "0" << ", ";
+        file << "0" << ", ";
+        file << "0" << ", ";
+        file << "0" << ", ";
     }
+    file << "0" << ", ";
+    file << "0" << ", ";
+    file << "0" << ", ";
+    file << "0" << ", ";
+    file << "0" << ", ";
     file << "0" << endl;
 }
 

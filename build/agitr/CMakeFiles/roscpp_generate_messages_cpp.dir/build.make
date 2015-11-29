@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mick/urdf_info/src
+CMAKE_SOURCE_DIR = /home/prorip/urdf_info/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mick/urdf_info/build
+CMAKE_BINARY_DIR = /home/prorip/urdf_info/build
 
 # Utility rule file for roscpp_generate_messages_cpp.
 
@@ -56,10 +56,10 @@ agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/build: roscpp_generate_message
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 
 agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	cd /home/mick/urdf_info/build/agitr && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/prorip/urdf_info/build/agitr && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/depend:
-	cd /home/mick/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mick/urdf_info/src /home/mick/urdf_info/src/agitr /home/mick/urdf_info/build /home/mick/urdf_info/build/agitr /home/mick/urdf_info/build/agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/prorip/urdf_info/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/prorip/urdf_info/src /home/prorip/urdf_info/src/agitr /home/prorip/urdf_info/build /home/prorip/urdf_info/build/agitr /home/prorip/urdf_info/build/agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : agitr/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
 

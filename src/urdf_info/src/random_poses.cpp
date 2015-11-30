@@ -46,7 +46,7 @@ int main(int argc, char **argv)
       joints = kinematic_model->getActiveJointModels();
 
       //Assign group
-      moveit::planning_interface::MoveGroup group("manipulator");
+      moveit::planning_interface::MoveGroup group("body");
       moveit::planning_interface::MoveGroup::Plan my_plan;
       bool success=false;
 
@@ -61,7 +61,7 @@ int main(int argc, char **argv)
             if (success == 1) {
                 //cout << "Good Move" << endl;
                 coords();
-                ros::Duration(10).sleep();
+                ros::Duration(1).sleep();
             }
             else{i--;}//cout<< "Bad Move" << endl;}
         }
@@ -70,12 +70,79 @@ int main(int argc, char **argv)
 }
 
 void coords(){
-
+/*
     //Baxter
-    //const char *args[] = { "head", "right_upper_shoulder", "right_lower_shoulder", "right_upper_elbow", "right_lower_elbow", "right_upper_forearm", "right_lower_forearm", "right_wrist",
-    //                       "left_upper_shoulder", "left_lower_shoulder", "left_upper_elbow", "left_lower_elbow", "left_upper_forearm", "left_lower_forearm", "left_wrist"};
+    const char *args[] = { "head",
+                           "right_upper_shoulder",
+                           "right_lower_shoulder",
+                           "right_upper_elbow",
+                           "right_lower_elbow",
+                           "right_upper_forearm",
+                           "right_lower_forearm",
+                           "right_wrist",
+                           "left_upper_shoulder",
+                           "left_lower_shoulder",
+                           "left_upper_elbow",
+                           "left_lower_elbow",
+                           "left_upper_forearm",
+                           "left_lower_forearm",
+                           "left_wrist"};
 
-    const char *args[] = { "link_1", "link_2", "link_3", "link_4", "link_5", "link_6", "tool0" };
+    //ABB & FANUC Manipulators
+    const char *args[] = { "link_1",
+                           "link_2",
+                           "link_3",
+                           "link_4",
+                           "link_5",
+                           "link_6",
+                           "tool0"};
+*/
+    //NAO
+    const char *args[] = {"Head",
+                          "Neck",
+                          "LAnklePitch",
+                          "l_ankle",
+                          "LForeArm",
+                          "LElbow",
+                          "LFinger11_link",
+                          "LFinger12_link",
+                          "LFinger13_link",
+                          "LFinger21_link",
+                          "LFinger22_link",
+                          "LFinger23_link",
+                          "l_gripper",
+                          "LThigh",
+                          "LHip",
+                          "LPelvis",
+                          "LTibia",
+                          "LShoulder",
+                          "LBicep",
+                          "LThumb1_link",
+                          "LThumb2_link",
+                          "l_wrist",
+                          "RAnklePitch",
+                          "r_ankle",
+                          "RForeArm",
+                          "RElbow",
+                          "RFinger11_link",
+                          "RFinger12_link",
+                          "RFinger13_link",
+                          "RFinger21_link",
+                          "RFinger22_link",
+                          "RFinger23_link",
+                          "r_gripper",
+                          "RThigh",
+                          "RHip",
+                          "RPelvis",
+                          "RTibia",
+                          "RShoulder",
+                          "RBicep",
+                          "RThumb1_link",
+                          "RThumb2_link",
+                          "r_wrist"};
+
+
+
     int s = sizeof(args)/sizeof(*args);
     std::vector<std::string> links(args, args+s);
 
@@ -84,20 +151,21 @@ void coords(){
     tf::Matrix3x3 m;
     double r,p,y;
     fstream file("joints.txt", std::fstream::in | std::fstream::out | std::fstream::app);
-    ros::Duration(1.0).sleep();
     //error first round?
+/*
     try{
-      listener.lookupTransform("/base_link", "/link_1",ros::Time(0), transform);
+      listener.lookupTransform("/base_link", "/head",ros::Time(0), transform);
+      ros::Duration(1.0).sleep();
     }
     catch (tf::TransformException &ex) {
       ROS_ERROR("%s",ex.what());
       ros::Duration(1.0).sleep();
 
     }
-
+*/
     //Obtain coordinates of joints
     for(int i=0; i < links.size(); i++){
-
+        ros::Duration(0.2).sleep();
         listener.lookupTransform("/base_link", links[i],ros::Time(0), transform);
 
         file << transform.getOrigin().x() << ", ";
@@ -108,7 +176,7 @@ void coords(){
         file << r << ", ";
         file << p << ", ";
         file << y << ", ";
-        ros::Duration(1.0).sleep();
+        //llros::Duration(1.0).sleep();
 
     }
 

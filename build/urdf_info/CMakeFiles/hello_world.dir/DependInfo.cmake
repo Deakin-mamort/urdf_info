@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/prorip/urdf_info/src/urdf_info/src/hello.cpp" "/home/prorip/urdf_info/build/urdf_info/CMakeFiles/hello_world.dir/src/hello.cpp.o"
+  "/home/mick/urdf_info/src/urdf_info/src/hello.cpp" "/home/mick/urdf_info/build/urdf_info/CMakeFiles/hello_world.dir/src/hello.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -21,7 +21,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/prorip/urdf_info/src/urdf_info/include"
+  "/home/mick/urdf_info/src/urdf_info/include"
   "/opt/ros/indigo/include"
   "/usr/include/eigen3"
   )

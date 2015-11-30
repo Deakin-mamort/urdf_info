@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/hello_world.dir/src/hello.cpp.o"
-  "/home/prorip/urdf_info/devel/lib/urdf_info/hello_world.pdb"
-  "/home/prorip/urdf_info/devel/lib/urdf_info/hello_world"
+  "/home/mick/urdf_info/devel/lib/urdf_info/hello_world.pdb"
+  "/home/mick/urdf_info/devel/lib/urdf_info/hello_world"
 )
 
 # Per-language clean rules from dependency scanning.

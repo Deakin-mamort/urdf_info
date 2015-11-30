@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/prorip/urdf_info/src/urdf_info/src/random_poses.cpp
+/home/mick/urdf_info/src/urdf_info/src/random_poses.cpp
 ros/ros.h
 -
 tf/transform_listener.h

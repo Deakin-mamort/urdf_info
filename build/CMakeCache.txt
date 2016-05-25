@@ -314,6 +314,9 @@ eigen_stl_containers_DIR:PATH=/opt/ros/indigo/share/eigen_stl_containers/cmake
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/indigo/share/gencpp/cmake
 
+//The directory containing a CMake configuration file for geneus.
+geneus_DIR:PATH=/opt/ros/indigo/share/geneus/cmake
+
 //The directory containing a CMake configuration file for genlisp.
 genlisp_DIR:PATH=/opt/ros/indigo/share/genlisp/cmake
 
@@ -449,9 +452,6 @@ sensor_msgs_DIR:PATH=/opt/ros/indigo/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for shape_msgs.
 shape_msgs_DIR:PATH=/opt/ros/indigo/share/shape_msgs/cmake
-
-//The directory containing a CMake configuration file for shape_tools.
-shape_tools_DIR:PATH=/opt/ros/indigo/share/shape_tools/cmake
 
 //The directory containing a CMake configuration file for srdfdom.
 srdfdom_DIR:PATH=/opt/ros/indigo/share/srdfdom/cmake

@@ -128,7 +128,6 @@ hello_world_EXTERNAL_OBJECTS =
 /home/mick/urdf_info/devel/lib/urdf_info/hello_world: /opt/ros/indigo/lib/libgeometric_shapes.so
 /home/mick/urdf_info/devel/lib/urdf_info/hello_world: /opt/ros/indigo/lib/liboctomap.so
 /home/mick/urdf_info/devel/lib/urdf_info/hello_world: /opt/ros/indigo/lib/liboctomath.so
-/home/mick/urdf_info/devel/lib/urdf_info/hello_world: /opt/ros/indigo/lib/libshape_tools.so
 /home/mick/urdf_info/devel/lib/urdf_info/hello_world: /opt/ros/indigo/lib/libeigen_conversions.so
 /home/mick/urdf_info/devel/lib/urdf_info/hello_world: /opt/ros/indigo/lib/librandom_numbers.so
 /home/mick/urdf_info/devel/lib/urdf_info/hello_world: /opt/ros/indigo/lib/libkdl_parser.so

@@ -141,7 +141,7 @@ void coords(){
                           "RThumb2_link",
                           "r_wrist"};
 
-*/
+
 
     //ROMEO
     const char *args[] = {"HeadPitch_link",                
@@ -199,6 +199,58 @@ void coords(){
 			  "RWristRoll_link",               
 			  "RWristYaw_link",                
 			  "body"};
+*/
+
+// REEMC-FULLBODY
+
+    const char *args[] = {"arm_left_1_link",         
+			  "arm_left_2_link",         
+			  "arm_left_3_link",         
+			  "arm_left_4_link",         
+			  "arm_left_5_link",         
+			  "arm_left_6_link",         
+			  "arm_left_7_link",         
+			  "arm_right_1_link",        
+			  "arm_right_2_link",        
+			  "arm_right_3_link",        
+			  "arm_right_4_link",        
+			  "arm_right_5_link",        
+			  "arm_right_6_link",        
+			  "arm_right_7_link",        
+			  "hand_left_index_1_link",  
+			  "hand_left_index_2_link",  
+			  "hand_left_index_3_link",  
+			  "hand_left_index_link",    
+			  "hand_left_middle_1_link", 
+			  "hand_left_middle_2_link", 
+			  "hand_left_middle_3_link", 
+			  "hand_left_middle_link",   
+			  "hand_left_thumb_link",    
+			  "hand_right_index_1_link",  
+			  "hand_right_index_2_link", 
+			  "hand_right_index_3_link", 
+			  "hand_right_index_link",   
+			  "hand_right_middle_1_link",
+			  "hand_right_middle_2_link",
+			  "hand_right_middle_3_link",
+			  "hand_right_middle_link",  
+			  "hand_right_thumb_link",   
+			  "head_1_link",             
+			  "head_2_link",             
+			  "leg_left_1_link",         
+			  "leg_left_2_link",         
+			  "leg_left_3_link",         
+			  "leg_left_4_link",         
+			  "leg_left_5_link",         
+			  "leg_left_6_link",         
+			  "leg_right_1_link",        
+			  "leg_right_2_link",        
+			  "leg_right_3_link",        
+			  "leg_right_4_link",        
+			  "leg_right_5_link",        
+			  "leg_right_6_link",        
+			  "torso_1_link",            
+			  "torso_2_link"};
 
     int s = sizeof(args)/sizeof(*args);
     std::vector<std::string> links(args, args+s);

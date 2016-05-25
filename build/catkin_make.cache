@@ -1,2 +1,0 @@
-agitr:urdf_info
--DCATKIN_DEVEL_PREFIX=/home/mick/urdf_info/devel -DCMAKE_INSTALL_PREFIX=/home/mick/urdf_info/install -G Unix Makefiles

@@ -14,7 +14,7 @@
 using namespace std;
 using namespace boost;
 
-int MAX_JOINTS = 55;
+int MAX_JOINTS = 75;
 
 void printActiveJoints (vector<moveit::core::JointModel *> jointList);
 void printJointGroups (vector<string> jointGroups);
@@ -199,7 +199,7 @@ void coords(){
 			  "RWristRoll_link",               
 			  "RWristYaw_link",                
 			  "body"};
-*/
+
 
 // REEMC-FULLBODY
 
@@ -251,6 +251,85 @@ void coords(){
 			  "leg_right_6_link",        
 			  "torso_1_link",            
 			  "torso_2_link"};
+*/
+
+//R2 FullBody
+	
+    const char *args[] = {"r2/left_index_base",
+			  "r2/left_index_yaw",
+			  "r2/left_index_proximal",
+			  "r2/left_index_medial",
+			  "r2/left_wrist_yaw",
+			  "r2/left_little_proximal",
+			  "r2/left_little_medial",
+			  "r2/left_middle_base",
+			  "r2/left_middle_yaw",
+			  "r2/left_middle_proximal",
+			  "r2/left_middle_medial",
+			  "r2/left_wrist_yaw",
+			  "r2/left_ring_proximal",
+			  "r2/left_ring_medial",
+			  "r2/left_wrist_yaw",
+			  "r2/left_thumb_proximal",
+			  "r2/left_thumb_medial_prime",
+			  "r2/left_thumb_medial",
+			  "r2/chest_base",
+			  "r2/left_shoulder_roll",
+			  "r2/left_shoulder_pitch",
+			  "r2/left_upper_arm",
+			  "r2/left_elbow",
+			  "r2/left_lower_arm",
+			  "r2/left_wrist_pitch",
+			  "r2/left_leg_foot",
+			  "r2/left_leg_foot",
+			  "r2/left_leg_foot",
+			  "r2/left_leg_j0_base",
+			  "r2/left_hip_roll",
+			  "r2/left_hip_pitch",
+			  "r2/left_upper_leg",
+			  "r2/left_knee",
+			  "r2/left_lower_leg",
+			  "r2/left_ankle_pitch",
+			  "r2/waist_center",
+			  "r2/neck_base",
+			  "r2/neck_lower_pitch",
+			  "r2/right_index_base",
+			  "r2/right_index_yaw",
+			  "r2/right_index_proximal",
+			  "r2/right_index_medial",
+			  "r2/right_wrist_yaw",
+			  "r2/right_little_proximal",
+			  "r2/right_little_medial",
+			  "r2/right_middle_base",
+			  "r2/right_middle_yaw",
+			  "r2/right_middle_proximal",
+			  "r2/right_middle_medial",
+			  "r2/right_wrist_yaw",
+			  "r2/right_ring_proximal",
+			  "r2/right_ring_medial",
+			  "r2/right_wrist_yaw",
+			  "r2/right_thumb_proximal",
+			  "r2/right_thumb_medial_prime",
+			  "r2/right_thumb_medial",
+			  "r2/chest_base",
+			  "r2/right_shoulder_roll",
+			  "r2/right_shoulder_pitch",
+			  "r2/right_upper_arm",
+			  "r2/right_elbow",
+			  "r2/right_lower_arm",
+			  "r2/right_wrist_pitch",
+			  "r2/right_leg_foot",
+			  "r2/right_leg_foot",
+			  "r2/right_leg_foot",
+			  "r2/right_leg_j0_base",
+			  "r2/right_hip_roll",
+			  "r2/right_hip_pitch",
+			  "r2/right_upper_leg",
+			  "r2/right_knee",
+			  "r2/right_lower_leg",
+			  "r2/right_ankle_pitch",
+			  "r2/robot_base"};
+
 
     int s = sizeof(args)/sizeof(*args);
     std::vector<std::string> links(args, args+s);
@@ -275,7 +354,7 @@ void coords(){
     //Obtain coordinates of joints
     for(int i=0; i < links.size(); i++){
         ros::Duration(0.2).sleep();
-        listener.lookupTransform("/base_link", links[i],ros::Time(0), transform);
+        listener.lookupTransform("base_link", links[i],ros::Time(0), transform);
 
         file << transform.getOrigin().x() << ", ";
         file << transform.getOrigin().y() << ", ";
@@ -285,7 +364,7 @@ void coords(){
         file << r << ", ";
         file << p << ", ";
         file << y << ", ";
-        //llros::Duration(1.0).sleep();
+        //ros::Duration(1.0).sleep();
 
     }
 

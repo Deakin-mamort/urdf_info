@@ -51,13 +51,12 @@ string jtypeToString(int type)
 	
 	return name;
 }
-
 void printJointList(shared_ptr<ModelInterface> robot)
 {
 	cout << bluetxt << "<-------------------- Joint List -------------------->" << whitetxt << endl;
 	int count=0;
 	for (map<string,shared_ptr<Joint> >::iterator joint = robot->joints_.begin();joint != robot->joints_.end(); joint++)
-	{
+    {
 			string joint_type = jtypeToString(joint->second->type);
 			count++;
 			if(joint_type != "Fixed" && joint_type != "UNKNOWN")
@@ -71,6 +70,8 @@ void printJointList(shared_ptr<ModelInterface> robot)
 				 << joint->second->name << "," 
 				 << setw(20) << left 
 				 << joint_type << ","
+                 << joint->second->parent_link_name << ","
+                 << joint_type << ","
 				 << joint->second->axis.x << ", " 
 				 << joint->second->axis.y << ", "
 				 << setw(10) << left 
